@@ -17,12 +17,16 @@ Weighting: 100%
 <!-- TODO: Confirm topics with Maggie -->
 
 Your development commentary must detail your individual input to the project, the research conducted and its application. Your research must be centred around answering **ONE** of the following questions:
-1. What are the different ways in which the experience of immersion has been theorised, and which theorisation, if any, is most relevant to video games? Draw on relevant scholarship and your analysis of appropriate video game examples. <---- 
+1. What are the different ways in which the experience of immersion has been theorised, and which theorisation, if any, is most relevant to video games? Draw on relevant scholarship and your analysis of appropriate video game examples. 
 2. Will video games inevitably mature into a new narrative artform driven by their storytelling ambitions? Consider different narrative structures deployed by game designers and the player’s role in experiencing and constructing game stories.  
 3. What does it mean to approach a video game from a ludological standpoint, and should theories relating to rules, games, and play be central to the analysis of video games?  
 4. How does the design of video game space affect the actions and experiences of players? Consider how different game spaces have been categorised in the literature and concepts of space and place discussed in the lecture.  
 5. What are the key similarities and differences between the formal aspects of the video game and film? And, what can the answer to this question tell us about the relationship between them? Consider aspects like narrative and the concept of remediation covered in lecture six. 
 6. Are all video games essentially simulations that give players a new degree of control over media texts, or does considering the medium through the concept of simulation suggest it has the power to train their players to behave in certain ways? 
+
+## Chosen Question
+
+1. What are the different ways in which the experience of immersion has been theorised, and which theorisation, if any, is most relevant to video games? Draw on relevant scholarship and your analysis of appropriate video game examples.
 
 ## Key Requirements
 
@@ -236,12 +240,24 @@ Using the research I did on immersion, we came up with a narrative for the boogy
 - If any difficulties remain unresolved, explain the impact on the project and any mitigation strategies used to minimise their effect.  
 - Reflect on what you would do differently in future projects to avoid similar issues.
 
-## Outcomes (Suggested Word Count 300) 
+### Movable Boxes
+The first step I did when creating the game was to program the pushable and pullable boxes.
+
+<iframe width="600" height="600" src="https://blueprintue.com/render/sn6a9i_-/" scrolling="no" allowfullscreen></iframe>
+
+
+
+## Outcomes (Suggested Word Count 300) 82
 
 ### Source Code/Project Files
 - Provide a link to your complete source code or project files.  
 - Ensure the link is publicly accessible or shared with the appropriate permissions.  
 - Include a brief description of the files provided, highlighting key components or any instructions required to run the project.
+
+https://github.com/C6WX/Group-7-2
+<br>
+<br>
+Within the repository, the first two files that you will find are the project files for the game. The first file is the Unreal engine config file and the second is the content file. The content file is mainly organised into a dynamic file and a static file however some files have been left in the main content file. The other files you will find in the repository are the gitignore file, the project file, the README file and the gitattributes file.
 
 ### Build Link
 - Share a link to a playable or executable build of your project.  
@@ -253,7 +269,7 @@ Using the research I did on immersion, we came up with a narrative for the boogy
 - The video should showcase key features, functionality, and any unique elements of your project.  
 - Include a brief commentary or text overlay in the video to explain the different aspects of your project as they are shown.
 
-## Reflection (Suggested Word Count 500) 
+## Reflection (Suggested Word Count 500) 349
 
 ### Research Effectiveness  
 - Assess the usefulness of the research conducted during the project.  
@@ -275,17 +291,23 @@ Using the research I did on immersion, we came up with a narrative for the boogy
 - Suggest improvements to your workflow, research methods, or implementation process based on your reflections.  
 - Consider any new tools, techniques, or approaches you would explore in future projects to achieve better results.
 
+The research I did into Little Nightmares 2 was very useful when it came to making this project as it shows what works and what doesn't work when making a narrative horror game. The main part of the research that helped was the research I did into the lighting within the game and also the monsters in the game as it helped set the scene and create the boogieman monster.
+
+One thing that went well in the project was getting the cameras to work with where the player moved to. Having different preset camera angles instead of just having the camera follow the player really made the game feel more like Little Nightmares instead of a third-person RPG game. The cameras also helped players find where they needed to go more easily; when we did the first playtests before the cameras were implemented, people did not know where to go and were very confused about what they had to do but after they were added, people found their way to the codes a lot easier.
+
+Something that didn't go well when working on the project was the lack of communication. Communication can be difficult in a group of seven people so that's why we made a Trello board and a milanote and also assigned tasks to each team member but even after that only three of us seemed to be communicating. This led to 3D assets starting to be created within the last two weeks, leaving the designers to have to use prefabs and the animator to not have any assets to animate. 
+
+What I would do differently next time is I would plan more progress meetings for the whole group so that everyone knew what needed to be done at the time and to see how everyone was doing and what had been done so far. Also, I would start programming sooner as I feel that we left programming too late and some key features, such as my pushing and pulling box script, needed to be removed within the last week as they were clunky and didn't work.
 ## Bibliography  
 
 ### Research
 
 - LITTLE NIGHTMARES II | Official Website (EN) (2021) At: https://en.bandainamcoent.eu/little-nightmares/little-nightmares-ii (Accessed  02/04/2025).
 - Little Nightmares 2 Gameplay Walkthrough FULL GAME (no commentary) (2021) At: https://www.youtube.com/watch?v=gKCvphbCpPE (Accessed  02/04/2025).
-Ryan, M.-L. (2009) 'From Narrative Games to Playable Stories: Toward a Poetics of Interactive Narrative' In: Storyworlds: A Journal of Narrative Studies 1 pp.43–59.
-
-
+- Ryan, M.-L. (2009) 'From Narrative Games to Playable Stories: Toward a Poetics of Interactive Narrative' In: Storyworlds: A Journal of Narrative Studies 1 pp.43–59.
 
 ### Implementation
+
 
 
 ## Declared Assets
@@ -294,6 +316,21 @@ Ryan, M.-L. (2009) 'From Narrative Games to Playable Stories: Toward a Poetics o
 - Declare any use of AI tools (e.g., ChatGPT, GitHub Copilot, Meshy) or pre-existing code. Specify the purpose of these assets/tools and how they were integrated into your work.  
 - Ensure you clearly distinguish between your original work and any external contributions to maintain academic integrity.
 
+- Placeholder assets - https://www.fab.com/listings/c65a8dd1-ec4c-409c-9919-5eda4f764772
+<br>
+<br>
+- Audio:
+1. Blowing out candle 1: https://pixabay.com/sound-effects/man-blowing-candle-out-102026/
+2. Blowing out candle 2: https://pixabay.com/sound-effects/blowing-out-candlewav-14441/
+3. Code collecting: https://pixabay.com/sound-effects/paper-collect-1-186598/
+4. Window opening: https://pixabay.com/sound-effects/window-open-89994/
+5. Door opening:https://pixabay.com/sound-effects/door-creaking-121673/
+6. Creaking Wood: https://pixabay.com/sound-effects/creaking-wood-199971/ 
+7. Ball Rolling: https://pixabay.com/sound-effects/026891-rolling-ball-wood-floor-64310/
+8. Candle Lighting: https://pixabay.com/sound-effects/candle-lighting-47691/
+9. Box Sliding: https://pixabay.com/sound-effects/wooden-chair-slide-scrape-on-wood-floor-75857/
+10. Boogieman sound 1: https://pixabay.com/sound-effects/poltergeist-making-noises-234019/
+11. Boogieman Sound 2: https://pixabay.com/sound-effects/scary-foley-86229/
 <br>
 <br>
 <br>
