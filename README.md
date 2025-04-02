@@ -1,28 +1,4 @@
 # Group-7
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
-DON'T EDIT
 
 # Assignment Information
 
@@ -129,7 +105,7 @@ You are required to research **at least one source from each of the following ca
 
 # Development Commentary Template
 
-## Project Outline (Suggested Word Count 500) 
+## Project Outline (Suggested Word Count 500)  436
 - Provide a concise description of the project, including its core concept and purpose.  
 - Outline the initial goals or objectives you aim to achieve.  
 - Identify any anticipated challenges or potential issues that may arise during development.
@@ -188,6 +164,8 @@ This project aims to create a unique horror puzzle experience that balances fear
 - Analyse the game's approach, cross-referencing it with other sources such as articles or talks to support your analysis.  
 - Explain how these insights apply to your project and influence your decision-making process.
 
+
+
 ### Academic Sources  
 - Research academic papers, books, or articles that provide theoretical guidance for your project. Include a brief summary of each source.  
 - Describe how the academic research applies to your project and shapes your design and development decisions.
@@ -195,6 +173,27 @@ This project aims to create a unique horror puzzle experience that balances fear
 ### Documentation Sources  
 - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
 - Explain how this technical knowledge supports your project work and guides your decision-making process.
+
+The game that I researched to be able to make this project happen is Little Nightmares 2. I used multiple website to research this game to get enough inspiration to create this game. The first website I used was the game's main website (LITTLE NIGHTMARES II | Official Website (EN), 2021).
+
+I used this website to research the main concept of the game as well as the monsters within the game to help create the boogyman within my project. Using the website I came to the realisation that the majority of the monsters within the game represent 
+common childhood fears. For example, one of the monsters within Little Nightmares 2 is a teacher that can extend her neck to abnormal length. The childhood fear this monster represents is the fear of being seen and told off. Another monster within the game is the doctor who can crawl on the ceiling and suprise the player at any time. This monster represents the fear of the doctors. 
+
+I found the website to be very simple and effective of showcasing their game and all the different things to expect when playing the game. Also the website is very interactive which made using it for research easier. One thing i didn't like about the website however is the amount of links to purchase the game as it takes up more space then it should on the website 
+
+Researching these different monsters helped the group come to the conclusion of having the monster in our game be the boogyman. The boogyman wasnt our first choice as we thought of having the monster be parents that kept checking on the player and trying to catch them but then we thought a very common childhood fear was the boogyman, the fear of whats in the dark.
+
+After deciding on the monster, I did some more research on Little Nightmares 2 to get inspiration for the main gameplay, which lead me to watching a gameplay video on Little Nightmares 2. (Little Nightmares 2 Gameplay Walkthrough FULL GAME (no commentary), 2021)
+
+From watching the video, I found out the the main gameplay/mechanics of Little Nightmares 2 consisted of pushing objects, using a light, climbing and throwing objects. Also, I discovered that Little Nightmares 2 really focuses on the use of lighting and audio to build tension and direct the player to where they need to go.
+
+For example at 1:40:10 in the video, lighting is used to direct the player to the elevator by having the only main light on the second floor be pointing at the elevator. Lighting is also used within the game to show major narrative areas in a scene or important parts of a scene such as how it is used at 1:55:44 to really make sure the player see the bathtub in the room. 
+
+Parts of the game that I found audio was used very well is when there is no monsters or threats in a scene but audio is still being used to create tension as if there is still something, one time this occurs is at 1:37:19. Audio is also used to make the monsters seem even scarier and more unnatural. The best time that this was used in my opinion is at 3:15:12 when Mono hands the monster version of Six the music box. The way that you can hear the deep breathing as it moves and the stretching of its elastic limbs really makes the player feel uneasy and scared of the monster.  
+
+From watching this video, as a group we came up with the idea to use light as a safe zone for the player in the form of candles as it focuses on lighting, similar to Little Nightmares 2 and also fits the boogyman theme as it will keep the player out of the dark and keep the boogyman away. Another idea we got from watching the video is the pushing mechanic. We thought of the idea of having toy boxes within our game that the player can push around to access certain areas and complete puzzles. Having to push objects also fits our game well, not only because it takes inspiration from Little Nighmares, but also because it will add more challenge as the boxes will be in the dark so the player will have to take their time pushing the box, while in the darkness, the boogyman will slowly be getting closer to attack, so the player will have to retreat back to a candle if they don't manage to push it in time. The gameplay video also opened our eyes to the importance of audio within the Little Nightmares games, so we decided to add audio for the monster, that will slowly get louder the longer the player spends in the dark and the closer the boogyman gets to the player. 
+
+
 
 ## Implementation (Suggested Word Count 1,100)  
 
@@ -259,9 +258,16 @@ This project aims to create a unique horror puzzle experience that balances fear
 - Consider any new tools, techniques, or approaches you would explore in future projects to achieve better results.
 
 ## Bibliography  
-- Compile a complete list of all sources referenced throughout your project. This may include articles, journals, videos, games, software, documentation, or any other materials.  
-- Ensure all references are formatted according to the [university's citation method](https://mylibrary.uca.ac.uk/referencing).  
-- Organise your references in alphabetical order. Alternatively, you may separate them by type (e.g., academic sources, games, videos), but consistency is key.
+
+### Research
+
+- LITTLE NIGHTMARES II | Official Website (EN) (2021) At: https://en.bandainamcoent.eu/little-nightmares/little-nightmares-ii (Accessed  02/04/2025).
+- Little Nightmares 2 Gameplay Walkthrough FULL GAME (no commentary) (2021) At: https://www.youtube.com/watch?v=gKCvphbCpPE (Accessed  02/04/2025).
+
+
+
+### Implementation
+
 
 ## Declared Assets
 - Provide a detailed list of any third-party assets used in the project.  
