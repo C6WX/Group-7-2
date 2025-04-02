@@ -17,7 +17,7 @@ Weighting: 100%
 <!-- TODO: Confirm topics with Maggie -->
 
 Your development commentary must detail your individual input to the project, the research conducted and its application. Your research must be centred around answering **ONE** of the following questions:
-1. What are the different ways in which the experience of immersion has been theorised, and which theorisation, if any, is most relevant to video games? Draw on relevant scholarship and your analysis of appropriate video game examples.  
+1. What are the different ways in which the experience of immersion has been theorised, and which theorisation, if any, is most relevant to video games? Draw on relevant scholarship and your analysis of appropriate video game examples. <---- 
 2. Will video games inevitably mature into a new narrative artform driven by their storytelling ambitions? Consider different narrative structures deployed by game designers and the player’s role in experiencing and constructing game stories.  
 3. What does it mean to approach a video game from a ludological standpoint, and should theories relating to rules, games, and play be central to the analysis of video games?  
 4. How does the design of video game space affect the actions and experiences of players? Consider how different game spaces have been categorised in the literature and concepts of space and place discussed in the lecture.  
@@ -113,7 +113,7 @@ You are required to research **at least one source from each of the following ca
 # Project Outline
 
 ## 1. Introduction  
-This project is a 3D horror puzzle game inspired by *Little Nightmares 2*. The player takes on the role of a child trapped in a large, old-fashioned wooden bedroom, trying to escape from the Boogeyman who stalks them in the darkness. To survive, they must navigate the dark using candles while solving puzzles to unlock an escape route. The game will focus on atmospheric horror, tension-building audio, and immersive puzzle mechanics.  
+This project is a 3D horror puzzle game inspired by Little Nightmares 2 (Little Nightmares 2, Supermassive Games, 2021). The player takes on the role of a child trapped in a large, old-fashioned wooden bedroom, trying to escape from the Boogeyman who stalks them in the darkness. To survive, they must navigate the dark using candles while solving puzzles to unlock an escape route. The game will focus on atmospheric horror, tension-building audio, and immersive puzzle mechanics.  
 
 ## 2. Core Gameplay Mechanics  
 - Light vs. Darkness: The player carries a small candle that helps them see. They can also light larger candles placed around the room to protect them from the boogyman.  
@@ -174,6 +174,7 @@ This project aims to create a unique horror puzzle experience that balances fear
 - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
 - Explain how this technical knowledge supports your project work and guides your decision-making process.
 
+### Concept and Monsters
 The game that I researched to be able to make this project happen is Little Nightmares 2. I used multiple website to research this game to get enough inspiration to create this game. The first website I used was the game's main website (LITTLE NIGHTMARES II | Official Website (EN), 2021).
 
 I used this website to research the main concept of the game as well as the monsters within the game to help create the boogyman within my project. Using the website I came to the realisation that the majority of the monsters within the game represent 
@@ -182,6 +183,8 @@ common childhood fears. For example, one of the monsters within Little Nightmare
 I found the website to be very simple and effective of showcasing their game and all the different things to expect when playing the game. Also the website is very interactive which made using it for research easier. One thing i didn't like about the website however is the amount of links to purchase the game as it takes up more space then it should on the website 
 
 Researching these different monsters helped the group come to the conclusion of having the monster in our game be the boogyman. The boogyman wasnt our first choice as we thought of having the monster be parents that kept checking on the player and trying to catch them but then we thought a very common childhood fear was the boogyman, the fear of whats in the dark.
+
+### Gameplay, Audio and Lighting
 
 After deciding on the monster, I did some more research on Little Nightmares 2 to get inspiration for the main gameplay, which lead me to watching a gameplay video on Little Nightmares 2. (Little Nightmares 2 Gameplay Walkthrough FULL GAME (no commentary), 2021)
 
@@ -193,7 +196,18 @@ Parts of the game that I found audio was used very well is when there is no mons
 
 From watching this video, as a group we came up with the idea to use light as a safe zone for the player in the form of candles as it focuses on lighting, similar to Little Nightmares 2 and also fits the boogyman theme as it will keep the player out of the dark and keep the boogyman away. Another idea we got from watching the video is the pushing mechanic. We thought of the idea of having toy boxes within our game that the player can push around to access certain areas and complete puzzles. Having to push objects also fits our game well, not only because it takes inspiration from Little Nighmares, but also because it will add more challenge as the boxes will be in the dark so the player will have to take their time pushing the box, while in the darkness, the boogyman will slowly be getting closer to attack, so the player will have to retreat back to a candle if they don't manage to push it in time. The gameplay video also opened our eyes to the importance of audio within the Little Nightmares games, so we decided to add audio for the monster, that will slowly get louder the longer the player spends in the dark and the closer the boogyman gets to the player. 
 
+### Immersion
 
+Withing video games there are quite a few different forms of immersion that have been theorised. Some examples of immersion is cognitive immersion, where players enter a flow state when a game balances challenge and skill, narrative immersion, when players feel immersed in the games story, spatial immersion, when players feel present in a virtual environment, ludic immersion, when players become absorbed in the gameplay loop, and embodied immersion, when someone becomes immersed in a game by physcically being in the game through virtual reality.
+
+Out of all the different forms of immersion, the form that I feel is most relevant to our game and video games in general is narrative immersion as in Little Nightmares 2, the game is very focused on the narrative and the player wanting to find out what will happen next and why everything is the way it is and that is what we want within our game.
+
+To best create narrative immersion within our game, I looked into a paper by Marie-Laure Ryan on narrative immersion in video games (Ryan, 2009).
+
+One thing that Marie-Laure said within the paper is  "narrative immersion is an engagement of the imagination in the construction and contemplation
+of a storyworld that relies on purely mental activity." In my opinion, this line alone proves that narrative immersion is most relevant to video games. This is because of the fact that people play video games because they want to do something interactive, otherwise they would have watched a movie, and a form of interaction with media is thinking. When I am playing a game, I enjoy thinking about what is happening, what might happen and where the story is going, it keeps me playing. However, when I play a game where I can't keep up with the story or I dont understand it, I lose interest really quickly as I dont feel immersed. I also like the use of the phrase "construction and contemplation of a storyworld" as this shows the reach that a good narrative can have within a video game. Normally when you think of "construction of a storyworld", you probably think of when you are reading a good book and you are building the world in you'r head, because this is the main way immersion works in a book. But as this is said for a video game, it just shows how narratively well written games can be to be compared to a book which is a media with its only focus being narrative immersion. 
+
+As well as looking at a paper to research immersion, I looked back on a game that I have previously played that immersed me in its narrative. The first game that came to mind was Dying Light. (Dying light, Techland, 2015)
 
 ## Implementation (Suggested Word Count 1,100)  
 
@@ -263,6 +277,7 @@ From watching this video, as a group we came up with the idea to use light as a 
 
 - LITTLE NIGHTMARES II | Official Website (EN) (2021) At: https://en.bandainamcoent.eu/little-nightmares/little-nightmares-ii (Accessed  02/04/2025).
 - Little Nightmares 2 Gameplay Walkthrough FULL GAME (no commentary) (2021) At: https://www.youtube.com/watch?v=gKCvphbCpPE (Accessed  02/04/2025).
+Ryan, M.-L. (2009) 'From Narrative Games to Playable Stories: Toward a Poetics of Interactive Narrative' In: Storyworlds: A Journal of Narrative Studies 1 pp.43–59.
 
 
 
