@@ -133,13 +133,49 @@ You are required to research **at least one source from each of the following ca
 - Provide a concise description of the project, including its core concept and purpose.  
 - Outline the initial goals or objectives you aim to achieve.  
 - Identify any anticipated challenges or potential issues that may arise during development.
+ 
+# Project Outline
 
-- little nightmares 2 inspired game
-- you play as a child in a large bedroom
-- the monster you are having to survive against is the boogyman 
-- the player will have to use a small candle to see around them and light large candles to keep them out of the dark
-- if the player spends too long in the dark, they die
-- the player has to find a combination around the room by using candles to see so that they can open a locked diary which holds a key that opens the window which the player will use to escape 
+## 1. Introduction  
+This project is a 3D horror puzzle game inspired by *Little Nightmares 2*. The player takes on the role of a child trapped in a large, old-fashioned wooden bedroom, trying to escape from the Boogeyman who stalks them in the darkness. To survive, they must navigate the dark using candles while solving puzzles to unlock an escape route. The game will focus on atmospheric horror, tension-building audio, and immersive puzzle mechanics.  
+
+## 2. Core Gameplay Mechanics  
+- Light vs. Darkness: The player carries a small candle that helps them see. They can also light larger candles placed around the room to protect them from the boogyman.  
+- Danger of Darkness: If the player stays in the dark for too long, they will be killed and have to restart.  
+- Puzzle Solving: The player must find and input a combination code hidden in the room to unlock a diary.  
+- Objective & Escape: Inside the diary is a key that unlocks the window or door, allowing the player to escape.  
+
+## 3. Key Features & Design Goals  
+
+### 3.1 Gameplay & Mechanics  
+- A working, playable game with puzzles that challenge the player’s ability to explore and think critically.  
+- The candle-lighting system as a central mechanic for survival and exploration.  
+
+### 3.2 Atmosphere & Sound Design  
+- Tension-building audio with eerie sounds, whispers, creaking wood, and distant footsteps.  
+- A dynamic soundtrack that reacts to the player's actions (e.g., heart-pounding music when the Boogeyman is near).  
+
+### 3.3 Visual & Art Style  
+- 3D models designed to fit an *ld-fashioned, wooden children's bedroom setting.  
+- Dark, moody lighting effects that make shadows and candlelight feel realistic.  
+- The Boogeyman’s design should be unsettling, with fluid yet unnatural animations.  
+
+## 4. Anticipated Challenges & Solutions  
+
+### 4.1 Team Communication & Coordination  
+- The large team size and the fact that members have other projects may lead to delays and miscommunication.  
+- Solutions used:  
+  - Set up a trello board to track progress.  
+  - Regular meeting to ensure work is being complete.  
+  - Assigning specific roles and tasks so each team member has a clear focus.  
+
+### 4.2 Technical Development Challenges  
+- Implementing realistic candle-lighting mechanics and making the darkness system work smoothly.  
+- Ensuring puzzles are intuitive yet challenging enough to be engaging.  
+
+## 5. Conclusion  
+This project aims to create a unique horror puzzle experience that balances fear, exploration, and problem-solving. By focusing on immersive sound design and detailed 3D environments, The game will deliver a tense and atmospheric experience. Overcoming development challenges, particularly team coordination and technical execution, will be crucial to achieving this vision.  
+
 
 ## Research (Suggested Word Count 1,100) 
 
