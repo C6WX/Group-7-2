@@ -291,21 +291,51 @@ Next, I created a main menu that displays when the game starts. The main menu co
 *Figure 14. Input controller for the main menu that locks the input to mouse only.*
 <br>
 There were no errors when it came to creating the main menu, however I did have to watch a few tutorials to create it and force the player's input to be the mouse only.
+<br>
+<br>
+Once the main menu was finished, I started adding the audio into the game. One of the audio scripts have already been shown in figure 5.
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/iy-z14gi/" scrolling="no" allowfullscreen></iframe>
+*Figure 15. The script that plays the box pushing audio when the player collides with the box and stops the audio when the player stops colliding with it.*
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/78gr1xrc/" scrolling="no" allowfullscreen></iframe>
+*Figure 16. Whenever the player lands on the floor after jumping or falling, the landing audio is played.*
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/uvjjma0-/" scrolling="no" allowfullscreen></iframe>
+*Figure 17. Whilst the player is colliding with the ball, the rolling audio plays. Once the player stops colliding with the ball, the audio stops.*
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/ed359ygv/" scrolling="no" allowfullscreen></iframe>
+*Figure 18. Using animnotifies whenever the player's feet touch the ground to run the script, footstep audio is played.*
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/uaudnq-i/" scrolling="no" allowfullscreen></iframe>
+*Figure 19. Using random float in range and branch nodes, this script plays one of two different noises every 15 to 30 seconds.*
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/9qrn8ly0/" scrolling="no" allowfullscreen></iframe>
+*Figure 20. The blueprint layout that I used for both of the meta sounds in the game.*
+<br>
+To be able to create the audio, as it was my first time using audio in Unreal Engine, I used Youtube tutorials to help learn the basics of audio cues (Unreal Engine - Sound and Music In 6 Minutes, 2021). This tutorial was simple and straight to the point with how to use audio cues and how to play sounds at different locations. I only needed to use the first half of the video though as the second hald wasn't relevant to what I was using the audio for. This tutorial helped me make all the audio except the ball pushing and the box pushing audio.
+<br>
+Whilst I was implementing the audio, I came across an error where the audio would not stop playing when using a stop node. After asking for help with the problem, I was told to try meta sounds to fix the problem. Which lead me to watching a tutorial on them (MetaSounds in UE5: From Miniguns to Music | Unreal Engine, 2021). This tutorial went really in depth with how to setup meta sounds and how to use them but it only solved half of my problem I was having as it didn't show how to stop audio while it was playing so I looked at another tutorial for that (UE5 Metasounds fade in and out tutorial, 2023). After watching this video, I was able to solve the problem I was having as the end of the video showed how to set up a script to control audio in a blueprint which allowed me to have the audio stop after the player finished pushing the box.
+<br>
+Another problem that occured was the footstep audio overlapping. This had occured because I was using an event tick and a delay to play the audio, hoping it would match the player's footsteps. To solve this problem, I found a video on using animnotifies during an animation (UE4 Tutorial: Footstep Sounds on Different Materials (Request), 2018). The video talks through how to use animnotifies to call a script at specific times during a script. This fixed my overlapping problem because it wasn't being called every frame when the player moved but instead it was called once everytime the player's feet touched the floor.
+<br>
+<br>
+
 
 ## Outcomes (Suggested Word Count 300) 82
 
-```
+
 
 ### Source Code/Project Files
+```
 - Provide a link to your complete source code or project files.  
 - Ensure the link is publicly accessible or shared with the appropriate permissions.  
 - Include a brief description of the files provided, highlighting key components or any instructions required to run the project.
-
 ```
 https://github.com/C6WX/Group-7-2
 <br>
 <br>
-Within the repository, the first two files that you will find are the project files for the game. The first file is the Unreal engine config file and the second is the content file. The content file is mainly organised into a dynamic file and a static file however some files have been left in the main content file. The other files you will find in the repository are the gitignore file, the project file, the [README file](https://github.com/C6WX/Group-7-2/blob/main/README.md) and the gitattributes file.
+Within the repository, the first two files that you will find are the project files for the game. The first file is the Unreal engine [config file](https://github.com/C6WX/Group-7-2/tree/main/Config) and the second is the [content file](https://github.com/C6WX/Group-7-2/tree/main/Content). The content file is mainly organised into a [dynamic file](https://github.com/C6WX/Group-7-2/tree/main/Content/Dynamic) and a [static file](https://github.com/C6WX/Group-7-2/tree/main/Content/Static) however some files have been left in the main content file. The other files you will find in the repository are the [gitignore file](https://github.com/C6WX/Group-7-2/blob/main/.gitignore), the project file, the [README file](https://github.com/C6WX/Group-7-2/blob/main/README.md) and the [gitattributes file](https://github.com/C6WX/Group-7-2/blob/main/gitattributes.txt).
 ```
 ### Build Link
 - Share a link to a playable or executable build of your project.  
@@ -358,7 +388,13 @@ What I would do differently next time is I would plan more progress meetings for
 
 ### Implementation
 
-- Push and Pull Objects System on UE5 - Tutorial (2023) At: https://www.youtube.com/watch?v=v3JXpF4wl_o (Accessed  04/04/2025).
+- Push and Pull Objects System on UE5 - Tutorial (2023) At: https://www.youtube.com/watch?v=v3JXpF4wl_o (Accessed  12/03/2025).
+- Unreal Engine - Sound and Music In 6 Minutes (2021) At: https://www.youtube.com/watch?v=1GJRoUJvijw (Accessed  28/03/2025).
+- MetaSounds in UE5: From Miniguns to Music | Unreal Engine (2021) At: https://www.youtube.com/watch?v=3230-FwCts0 (Accessed  31/03/2025).
+- UE5 Metasounds fade in and out tutorial (2023) At: https://www.youtube.com/watch?v=5__cnje1DQM (Accessed  31/03/2025).
+- UE4 Tutorial: Footstep Sounds on Different Materials (Request) (2018) At: https://www.youtube.com/watch?v=LPtDqsMFFys (Accessed  28/03/2025).
+
+
 
 
 
