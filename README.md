@@ -138,10 +138,10 @@ The game will feature 3D models designed to fit an old-fashioned, wooden childre
 Since the team is large and members are working on other projects, communication breakdowns and delays may occur. To mitigate this, setting up a task management system such as Trello, Notion, or Slack will help track progress. Regular check-ins and updates will ensure accountability, and assigning specific roles will help each team member stay focused on their responsibilities.  
 
 ### Technical Development Challenges  
-Implementing realistic candle-lighting mechanics and ensuring the darkness system functions smoothly will be a key challenge. The puzzles must be intuitive yet engaging, avoiding frustration while still maintaining difficulty. AI development will also be crucial, ensuring the Boogeyman’s movement and behavior feel organic and terrifying rather than predictable.  
+Implementing realistic candle-lighting mechanics and ensuring the darkness system functions smoothly will be a key challenge. The puzzles must be intuitive yet engaging, avoiding frustration while still maintaining difficulty.  
 
 ## Conclusion  
-This project aims to create a unique horror puzzle experience that balances fear, exploration, and problem-solving. By focusing on immersive sound design, detailed 3D environments, and intelligent AI, the game will deliver a tense and atmospheric experience. Overcoming development challenges, particularly team coordination and technical execution, will be crucial to achieving this vision.  
+This project aims to create a unique horror puzzle experience that balances fear, exploration, and problem-solving. By focusing on immersive sound design and detailed 3D environments the game will deliver a tense and atmospheric experience. Overcoming development challenges, particularly team coordination and technical execution will be crucial to achieving this vision.  
 
 
 
@@ -170,7 +170,7 @@ This project aims to create a unique horror puzzle experience that balances fear
 ### Concept and Monsters
 The game that I researched to be able to make this project happen is Little Nightmares 2. I used multiple websites to research this game to get enough inspiration to create it. The first website I used was the game's main website (LITTLE NIGHTMARES II | Official Website (EN), 2021).
 
-I used this website to research the central concept of the game as well as the monsters within the game to help create the boogyman within my project. Using the website I came to the realisation that the majority of the monsters within the game represent 
+I used this website to research the central concept of the game as well as the monsters within the game to help create the boogieman within my project. Using the website I came to the realisation that the majority of the monsters within the game represent 
 common childhood fears. For example, one of the monsters within Little Nightmares 2 is a teacher who can extend her neck to an abnormal length. The childhood fear this monster represents is the fear of being seen and told off. Another monster within the game is the doctor who can crawl on the ceiling and surprise the player at any time. This monster represents the fear of the doctors. 
 
 I found the website to be very simple and effective in showcasing their game and all the different things to expect when playing the game. Also, the website is very interactive which makes using it for research easier. One thing I didn't like about the website however is the amount of links to purchase the game as it takes up more space than it should on the website. 
@@ -244,18 +244,18 @@ The first step I did when creating the game was to program the pushable and pull
 <iframe width="600" height="600" src="https://blueprintue.com/render/lgaj23xz/" scrolling="no" allowfullscreen></iframe>
 *Figure 4. Moves the box based on the direction the player is moving and the box's movement speed.*
 <br>
-The box can be pushed and pulled by pressing E when the player enters it's collision box. Once E is pressed, the player's movement speed is reduced and the box started to match the players movements until E is pressed again. To create this script, I used a Youtube tutorial (Push and Pull Objects System on UE5 - Tutorial, 2023). The tutorial was very helpful but after I followed a long with it, there was lots of problems with the script which I discovered most within the playtest. Something that also didn't help was the fact that the content creator was working on their own project whilst making the tutorial, making it even more confusing to follow.
+The box can be pushed and pulled by pressing E when the player enters its collision box. Once E is pressed, the player's movement speed is reduced and the box starts to match the player's movements until E is pressed again. To create this script, I used a YouTube tutorial (Push and Pull Objects System on UE5 - Tutorial, 2023). The tutorial was very helpful but after I followed along with it, there were lots of problems with the script which I discovered most within the playtest. Something that also didn't help was the fact that the content creator was working on their own project whilst making the tutorial, making it even more confusing to follow.
 <br>
-After creating the box blueprint, I hosted a playtest for the game and found out that people found the box to be very unfinished as it moved faster then the player, wouldn't move in the right direction or the player would get stuck moving slow as the box would cause them to leave the collision and then they wouldn't be able to re-enter the box to reset the movement speed. 
+After creating the box blueprint, I hosted a playtest for the game and found out that people found the box to be very unfinished as it moved faster than the player, wouldn't move in the right direction or the player would get stuck moving slowly as the box would cause them to leave the collision and then they wouldn't be able to re-enter the box to reset the movement speed. 
 <br>
-To fix these errors, I updated the box movement speed variable which allowed the box to move the same speed as the player and also made the boxes move the correct direction. However the box seemed to stop copying the player's movement when they tried to push it. 
+To fix these errors, I updated the box movement speed variable which allowed the box to move at the same speed as the player and also made the boxes move in the correct direction. However, the box seemed to stop copying the player's movement when they tried to push it. 
 <br>
-I decided to try a tutorial that was meant to pull objects towards the player when they got close so that there was still a form of pulling blocks in the game (Pull Actors Towards Target Tutorial | Unreal Engine, 2023). After following the video, which was very simple and easy to follow, the box wouldn't move as intended. I tried editing the script to try get it to work but to no avail. 
+I decided to try a tutorial that was meant to pull objects towards the player when they got close so that there was still a form of pulling blocks in the game (Pull Actors Towards Target Tutorial | Unreal Engine, 2023). After following the video, which was very simple and easy to follow, the box wouldn't move as intended. I tried editing the script to try to get it to work but to no avail. 
 <br>
 As this error was discovered later into the project and there was still more to do, I chose to disable the box script for the submission and leave the box pushing to the Unreal Engine physics.
 <br>
 <br>
-After the box, I created the candle safe zones and the darkness meter. The candles are used in the game to reduce the player's darkness levels and keep them safe temporarily and the darkness meter is used to track the players darkness value, the meter goes from 0 to 1 and when it reaches 1, the player dies and the scene restarts.
+After the box, I created the candle safe zones and the darkness meter. The candles are used in the game to reduce the player's darkness levels and keep them safe temporarily and the darkness meter is used to track the player's darkness value, the meter goes from 0 to 1 and when it reaches 1, the player dies and the scene restarts.
 <br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/fwjamk0-/" scrolling="no" allowfullscreen></iframe>
 *Figure 5. Candle blueprint that sets the candle to be visable and play audio when the player collides with it and then gets a random value that is used as a countdown to when the candle deactivates. When the candle deactivates, based on the amount of codes that the player has collected, one of two blow out noises will play to show the anger of the boogieman increasing.*
@@ -278,7 +278,7 @@ After the box, I created the candle safe zones and the darkness meter. The candl
 <iframe width="600" height="600" src="https://blueprintue.com/render/bbs8e__t/" scrolling="no" allowfullscreen></iframe>
 *Figure 11. Displays the darkness meter on the UI.*
 <br>
-The candles worked perfectly as intended however, during development, there was a bug with the candles that caused the player not to be able to lose darkness. This was due to the fact that the candles used two colliders, one to detect if the player touches the candle and one to have an area around the candle that the player can be in to reduce darkness, and once the player turned on the candle, they were already inside the candle area collider so begin overlap wouldn't activate. To fix this issue, I added an In Darkness variable that became true as soon as the player entered the safe area, no matter if the candle was active or not, to keep track of if the player is in it or not.
+The candles worked perfectly as intended however, during development, there was a bug with the candles that caused the player not to be able to lose darkness. This was due to the fact that the candles used two colliders, one to detect if the player touches the candle and one to have an area around the candle that the player can be in to reduce darkness, and once the player turned on the candle, they were already inside the candle area collider so begin overlap wouldn't activate. To fix this issue, I added an In Darkness variable that became true as soon as the player entered the safe area, no matter if the candle was active or not, to keep track of wether the player was in it or not.
 <br>
 To create the darkness bar, I watched a tutorial on how to create progress bars (Unreal-5 Menu UI:  PROGRESS BARS Explained (60 SECONDS!!), 2023). The video was very quick and precise but worked very well as it helped me create and set up the darkness bar. 
 <br>
@@ -294,14 +294,14 @@ Next, I created a main menu that displays when the game starts. The main menu co
 <iframe width="600" height="600" src="https://blueprintue.com/render/ej8ccobt/" scrolling="no" allowfullscreen></iframe>
 *Figure 14. Input controller for the main menu that locks the input to mouse only.*
 <br>
-There were no errors when it came to creating the main menu, however I did have to watch a few tutorials to create it and force the player's input to be the mouse only.
+There were no errors when it came to creating the main menu, however, I did have to watch a few tutorials to create it and force the player's input to be the mouse only.
 <br>
-The first tutorial I watched was on how to set up a main menu (How To Build MENUS AND UI In UE5 | Unreal Engine 5 Beginner Tutorial, 2022). The video goes over the basics of setting up a main menu and UI. I found this video very helpful when it came to setting up the UI and the main menu, however it didn't cover background images, which I needed for my game, so I used a different tutorial for that.
+The first tutorial I watched was on how to set up a main menu (How To Build MENUS AND UI In UE5 | Unreal Engine 5 Beginner Tutorial, 2022). The video goes over the basics of setting up a main menu and UI. I found this video very helpful when it came to setting up the UI and the main menu, however, it didn't cover background images, which I needed for my game, so I used a different tutorial for that.
 <br>
-The other tutorial I used (How To Create A Main Menu - Unreal Engine 5 Tutorial, 2022) covered more about main menus and discussed setting up a background image which allowed me to add an image of the game's starting scene to the main menu. Also this tutorial covered setting up controls for the main menu, which helped me avoid issues with the players changing control types.
+The other tutorial I used (How To Create A Main Menu - Unreal Engine 5 Tutorial, 2022) covered more about main menus and discussed setting up a background image which allowed me to add an image of the game's starting scene to the main menu. Also, this tutorial covered setting up controls for the main menu, which helped me avoid issues with the players changing control types.
 <br>
 <br>
-Once the main menu was finished, I started adding the audio into the game. One of the audio scripts have already been shown in figure 5.
+Once the main menu was finished, I started adding the audio to the game. One of the audio scripts has already been shown in Figure 5.
 <br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/iy-z14gi/" scrolling="no" allowfullscreen></iframe>
 *Figure 15. The script that plays the box pushing audio when the player collides with the box and stops the audio when the player stops colliding with it.*
@@ -321,11 +321,11 @@ Once the main menu was finished, I started adding the audio into the game. One o
 <iframe width="600" height="600" src="https://blueprintue.com/render/9qrn8ly0/" scrolling="no" allowfullscreen></iframe>
 *Figure 20. The blueprint layout that I used for both of the meta sounds in the game.*
 <br>
-To be able to create the audio, as it was my first time using audio in Unreal Engine, I used Youtube tutorials to help learn the basics of audio cues (Unreal Engine - Sound and Music In 6 Minutes, 2021). This tutorial was simple and straight to the point with how to use audio cues and how to play sounds at different locations. I only needed to use the first half of the video though as the second hald wasn't relevant to what I was using the audio for. This tutorial helped me make all the audio except the ball pushing and the box pushing audio.
+To be able to create the audio, as it was my first time using audio in Unreal Engine, I used YouTube tutorials to help learn the basics of audio cues (Unreal Engine - Sound and Music In 6 Minutes, 2021). This tutorial was simple and straight to the point with how to use audio cues and how to play sounds at different locations. I only needed to use the first half of the video though as the second half wasn't relevant to what I was using the audio for. This tutorial helped me make all the audio except the ball-pushing and the box-pushing audio.
 <br>
-Whilst I was implementing the audio, I came across an error where the audio would not stop playing when using a stop node. After asking for help with the problem, I was told to try meta sounds to fix the problem. Which lead me to watching a tutorial on them (MetaSounds in UE5: From Miniguns to Music | Unreal Engine, 2021). This tutorial went really in depth with how to setup meta sounds and how to use them but it only solved half of my problem I was having as it didn't show how to stop audio while it was playing so I looked at another tutorial for that (UE5 Metasounds fade in and out tutorial, 2023). After watching this video, I was able to solve the problem I was having as the end of the video showed how to set up a script to control audio in a blueprint which allowed me to have the audio stop after the player finished pushing the box.
+While I was implementing the audio, I came across an error where the audio would not stop playing when using a stop node. After asking for help with the problem, I was told to try meta sounds to fix the problem. Which lead me to watching a tutorial on them (MetaSounds in UE5: From Miniguns to Music | Unreal Engine, 2021). This tutorial went really in-depth with how to setup meta sounds and how to use them but it only solved half of my problem I was having as it didn't show how to stop audio while it was playing so I looked at another tutorial for that (UE5 Metasounds fade in and out tutorial, 2023). After watching this video, I was able to solve the problem I was having as the end of the video showed how to set up a script to control audio in a blueprint which allowed me to have the audio stop after the player finished pushing the box.
 <br>
-Another problem that occured was the footstep audio overlapping. This had occured because I was using an event tick and a delay to play the audio, hoping it would match the player's footsteps. To solve this problem, I found a video on using animnotifies during an animation (UE4 Tutorial: Footstep Sounds on Different Materials (Request), 2018). The video talks through how to use animnotifies to call a script at specific times during a script. This fixed my overlapping problem because it wasn't being called every frame when the player moved but instead it was called once everytime the player's feet touched the floor.
+Another problem that occurred was the footstep audio overlapping. This had occurred because I was using an event tick and a delay to play the audio, hoping it would match the player's footsteps. To solve this problem, I found a video on using animnotifies during an animation (UE4 Tutorial: Footstep Sounds on Different Materials (Request), 2018). The video talks about how to use animnotifies to call a script at specific times during a script. This fixed my overlapping problem because it wasn't being called every frame when the player moved but instead, it was called once every time the player's feet touched the floor.
 <br>
 <br>
 
@@ -386,7 +386,7 @@ One thing that went well in the project was getting the cameras to work with whe
 
 Something that didn't go well when working on the project was the lack of communication. Communication can be difficult in a group of seven people so that's why we made a Trello board and a milanote and also assigned tasks to each team member but even after that only three of us seemed to be communicating. This led to 3D assets starting to be created within the last two weeks, leaving the designers to have to use prefabs and the animator to not have any assets to animate. 
 
-What I would do differently next time is I would plan more progress meetings for the whole group so that everyone knew what needed to be done at the time and to see how everyone was doing and what had been done so far. Also, I would start programming sooner as I feel that we left programming too late and some key features, such as my pushing and pulling box script, needed to be removed within the last week as they were clunky and didn't work.
+What I would do differently next time I would plan more progress meetings for the whole group so that everyone knew what needed to be done at the time and to see how everyone was doing and what had been done so far. Also, I would start programming sooner as I feel that we left programming too late and some key features, such as my pushing and pulling box script, needed to be removed within the last week as they were clunky and didn't work.
 ## Bibliography  
 
 ### Research 
