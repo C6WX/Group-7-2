@@ -410,11 +410,12 @@ What I would do differently next time I would plan more progress meetings for th
 
 
 ## Declared Assets
+```
 - Provide a detailed list of any third-party assets used in the project.  
 - This includes asset packs, music, sound effects, 3D models, textures, scripts, or code from external sources.  
 - Declare any use of AI tools (e.g., ChatGPT, GitHub Copilot, Meshy) or pre-existing code. Specify the purpose of these assets/tools and how they were integrated into your work.  
 - Ensure you clearly distinguish between your original work and any external contributions to maintain academic integrity.
-
+```
 - Placeholder assets - https://www.fab.com/listings/c65a8dd1-ec4c-409c-9919-5eda4f764772
 <br>
 <br>
