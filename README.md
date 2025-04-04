@@ -235,33 +235,36 @@ Using the research I did on immersion, we came up with a narrative for the boogy
 The first step I did when creating the game was to program the pushable and pullable boxes.
 
 <iframe width="600" height="600" src="https://blueprintue.com/render/sn6a9i_-/" scrolling="no" allowfullscreen></iframe>
+*Figure 1. When E is pressed, and the player is colliding with the box, reduce their speed and set Is Interacting Box to true and turns on the box's physics. If E is pressed when teh player is not touching the box or if they were already interacting with the box, their movement speed is reset and Is Interacting Box is set to false.* 
 
 
 
 ## Outcomes (Suggested Word Count 300) 82
-
+```
 ### Source Code/Project Files
 - Provide a link to your complete source code or project files.  
 - Ensure the link is publicly accessible or shared with the appropriate permissions.  
 - Include a brief description of the files provided, highlighting key components or any instructions required to run the project.
-
+```
 https://github.com/C6WX/Group-7-2
 <br>
 <br>
 Within the repository, the first two files that you will find are the project files for the game. The first file is the Unreal engine config file and the second is the content file. The content file is mainly organised into a dynamic file and a static file however some files have been left in the main content file. The other files you will find in the repository are the gitignore file, the project file, the [README file](https://github.com/C6WX/Group-7-2/blob/main/README.md) and the gitattributes file.
-
+```
 ### Build Link
 - Share a link to a playable or executable build of your project.  
 - Ensure the build is accessible across relevant platforms and is publicly accessible.  
 - Include any necessary instructions for running the build, such as system requirements or installation steps.
+```
 
+```
 ### Video Demonstration
 - Embed a video or provide a link to a recorded demonstration of your project in action.  
 - The video should showcase key features, functionality, and any unique elements of your project.  
 - Include a brief commentary or text overlay in the video to explain the different aspects of your project as they are shown.
-
+```
 ## Reflection (Suggested Word Count 500) 349
-
+```
 ### Research Effectiveness  
 - Assess the usefulness of the research conducted during the project.  
 - Highlight which sources (games, academic, documentation) had the most significant impact on your work and explain why.  
@@ -281,7 +284,7 @@ Within the repository, the first two files that you will find are the project fi
 - Outline what you would do differently if you were to undertake a similar project again.  
 - Suggest improvements to your workflow, research methods, or implementation process based on your reflections.  
 - Consider any new tools, techniques, or approaches you would explore in future projects to achieve better results.
-
+```
 The research I did into Little Nightmares 2 was very useful when it came to making this project as it shows what works and what doesn't work when making a narrative horror game. The main part of the research that helped was the research I did into the lighting within the game and also the monsters in the game as it helped set the scene and create the boogieman monster.
 
 One thing that went well in the project was getting the cameras to work with where the player moved to. Having different preset camera angles instead of just having the camera follow the player really made the game feel more like Little Nightmares instead of a third-person RPG game. The cameras also helped players find where they needed to go more easily; when we did the first playtests before the cameras were implemented, people did not know where to go and were very confused about what they had to do but after they were added, people found their way to the codes a lot easier.
@@ -291,7 +294,7 @@ Something that didn't go well when working on the project was the lack of commun
 What I would do differently next time is I would plan more progress meetings for the whole group so that everyone knew what needed to be done at the time and to see how everyone was doing and what had been done so far. Also, I would start programming sooner as I feel that we left programming too late and some key features, such as my pushing and pulling box script, needed to be removed within the last week as they were clunky and didn't work.
 ## Bibliography  
 
-### Research
+### Research 
 
 - LITTLE NIGHTMARES II | Official Website (EN) (2021) At: https://en.bandainamcoent.eu/little-nightmares/little-nightmares-ii (Accessed  02/04/2025).
 - Little Nightmares 2 Gameplay Walkthrough FULL GAME (no commentary) (2021) At: https://www.youtube.com/watch?v=gKCvphbCpPE (Accessed  02/04/2025).
@@ -311,6 +314,7 @@ What I would do differently next time is I would plan more progress meetings for
 <br>
 <br>
 - Audio:
+
 1. Blowing out candle 1: https://pixabay.com/sound-effects/man-blowing-candle-out-102026/
 2. Blowing out candle 2: https://pixabay.com/sound-effects/blowing-out-candlewav-14441/
 3. Code collecting: https://pixabay.com/sound-effects/paper-collect-1-186598/
@@ -322,11 +326,13 @@ What I would do differently next time is I would plan more progress meetings for
 9. Box Sliding: https://pixabay.com/sound-effects/wooden-chair-slide-scrape-on-wood-floor-75857/
 10. Boogieman sound 1: https://pixabay.com/sound-effects/poltergeist-making-noises-234019/
 11. Boogieman Sound 2: https://pixabay.com/sound-effects/scary-foley-86229/
+
 <br>
 <br>
 <br>
 <br>
 
+```
 # Assessment and Marking Criteria  
 
 Your project submission, including the **Development Commentary**, **project files/source code**, and **build**, will be assessed using a **detailed rubric** mapped directly to the **learning outcomes** outlined in the unit handbook. The assessment criteria are divided into four key areas: **Professionalism**, **Research**, **Creative**, and **Technical**, each contributing to your overall grade.  
@@ -414,3 +420,4 @@ Your **technical skills** will be assessed based on the **quality of your implem
 - **Learn from mistakes**: Document any challenges or failures you faced and explain how you addressed them. This shows critical thinking and problem-solving skills.  
 - **Show your process**: Don’t just present the final outcome. Share your **development journey**, including research, experimentation, and iterations.  
 - **Be critical**: Analyse both **successful** and **unsuccessful** sources to show a well-rounded understanding of your project’s context.
+```
