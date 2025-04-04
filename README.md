@@ -232,19 +232,75 @@ Using the research I did on immersion, we came up with a narrative for the boogy
 - Reflect on what you would do differently in future projects to avoid similar issues.
 ```
 ### Movable Boxes
-The first step I did when creating the game was to program the pushable and pullable boxes.
+The first step I did when creating the game was to program the pushable and pullable boxes. The boxes are used to reach tall places within the game.
 
 <iframe width="600" height="600" src="https://blueprintue.com/render/sn6a9i_-/" scrolling="no" allowfullscreen></iframe>
-*Figure 1. When E is pressed, and the player is colliding with the box, reduce their speed and set Is Interacting Box to true and turns on the box's physics. If E is pressed when teh player is not touching the box or if they were already interacting with the box, their movement speed is reset and Is Interacting Box is set to false.* 
-
-
+*Figure 1. When E is pressed, and the player is colliding with the box, reduce their speed and set Is Interacting Box to true and turns on the box's physics. If E is pressed when the player is not touching the box or if they were already interacting with the box, their movement speed is reset and Is Interacting Box is set to false.* 
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/ngidoxdv/" scrolling="no" allowfullscreen></iframe>
+*Figure 2. Changes the boxs location based on the location and movement of the player.*
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/fc0kcmm4/" scrolling="no" allowfullscreen></iframe>
+*Figure 3. Changes the Can Interact With Box variable so that the player is able to enter the push mode shown in figure 1.*
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/lgaj23xz/" scrolling="no" allowfullscreen></iframe>
+*Figure 4. Moves the box based on the direction the player is moving and the box's movement speed.*
+<br>
+The box can be pushed and pulled by pressing E when the player enters it's collision box. Once E is pressed, the player's movement speed is reduced and the box started to match the players movements until E is pressed again. To create this script, I used a Youtube tutorial (Push and Pull Objects System on UE5 - Tutorial, 2023). The tutorial was very helpful but after I followed a long with it, there was lots of problems with the script which I discovered most within the playtest. Something that also didn't help was the fact that the content creator was working on their own project whilst making the tutorial, making it even more confusing to follow.
+<br>
+After creating the box blueprint, I hosted a playtest for the game and found out that people found the box to be very unfinished as it moved faster then the player, wouldn't move in the right direction or the player would get stuck moving slow as the box would cause them to leave the collision and then they wouldn't be able to re-enter the box to reset the movement speed. 
+<br>
+To fix these errors, I updated the box movement speed variable which allowed the box to move the same speed as the player and also made the boxes move the correct direction. However the box seemed to stop copying the player's movement when they tried to push it. As this error was discovered later into the project and there was still more to do, I tried some different changes to fix it but to no avail. So I chose to disable the box script for the submission and leave the box pushing to the Unreal Engine physics.
+<br>
+<br>
+After the box, I created the candle safe zones and the darkness meter. The candles are used in the game to reduce the player's darkness levels and keep them safe temporarily and the darkness meter is used to track the players darkness value, the meter goes from 0 to 1 and when it reaches 1, the player dies and the scene restarts.
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/fwjamk0-/" scrolling="no" allowfullscreen></iframe>
+*Figure 5. Candle blueprint that sets the candle to be visable and play audio when the player collides with it and then gets a random value that is used as a countdown to when the candle deactivates. When the candle deactivates, based on the amount of codes that the player has collected, one of two blow out noises will play to show the anger of the boogieman increasing.*
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/duscoz3c/" scrolling="no" allowfullscreen></iframe>
+*Figure 6. When the player is inside the safe area collider on the candle, the enter candle script is activated. This script is shown in figure 8. When the player leaves the candle's safe area collider, the enter darkness script is activated, which is shown in figure 7.*
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/m00k96rf/" scrolling="no" allowfullscreen></iframe>
+*Figure 7. When the player isn't near a candle, the value of the darkness increases by 0.01 every o.5 seconds. This script is activated at the start of the game and in the candle script shown in figure 5.*
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/aclpye8g/" scrolling="no" allowfullscreen></iframe>
+*Figure 8. When the player is within the collision of a candle, the darkness variable is reduced by 0.075 every 0.5 seconds. This script is actived in the candle script shown in figure 5.*
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/83c2_u6k/" scrolling="no" allowfullscreen></iframe>
+*Figure 9. This script destroys the player actor if darkness reaches the value of 1 and then reloads the scene. Also this script stops the darkness variable from dropping below 0 when the candle reduces the value.*
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/q2wisjnu/" scrolling="no" allowfullscreen></iframe>
+*Figure 10. Converts the darkness value into a percentage that can be displayer on the bar.*
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/bbs8e__t/" scrolling="no" allowfullscreen></iframe>
+*Figure 11. Displays the darkness meter on the UI.*
+<br>
+The candles worked perfectly as intended however, during development, there was a bug with the candles that caused the player not to be able to lose darkness. This was due to the fact that the candles used two colliders, one to detect if the player touches the candle and one to have an area around the candle that the player can be in to reduce darkness, and once the player turned on the candle, they were already inside the candle area collider so begin overlap wouldn't activate. To fix this issue, I added an In Darkness variable that became true as soon as the player entered the safe area, no matter if the candle was active or not, to keep track of if the player is in it or not.
+<br>
+<br>
+Next, I created a main menu that displays when the game starts. The main menu consists of two buttons, a start button that takes the player to the main scene, and a quit button that closes the application.
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/11bbo4qu/" scrolling="no" allowfullscreen></iframe>
+*Figure 12. When the start button is pressed, the main scene is loaded and the input mode is set back to the player controller.*
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/g0q1dmdo/" scrolling="no" allowfullscreen></iframe>
+*Figure 13. When the quit button is pressed, the game closes.*
+<br>
+<iframe width="600" height="600" src="https://blueprintue.com/render/ej8ccobt/" scrolling="no" allowfullscreen></iframe>
+*Figure 14. Input controller for the main menu that locks the input to mouse only.*
+<br>
+There were no errors when it came to creating the main menu, however I did have to watch a few tutorials to create it and force the player's input to be the mouse only.
 
 ## Outcomes (Suggested Word Count 300) 82
+
 ```
+
 ### Source Code/Project Files
 - Provide a link to your complete source code or project files.  
 - Ensure the link is publicly accessible or shared with the appropriate permissions.  
 - Include a brief description of the files provided, highlighting key components or any instructions required to run the project.
+
 ```
 https://github.com/C6WX/Group-7-2
 <br>
@@ -301,6 +357,8 @@ What I would do differently next time is I would plan more progress meetings for
 - Ryan, M.-L. (2009) 'From Narrative Games to Playable Stories: Toward a Poetics of Interactive Narrative' In: Storyworlds: A Journal of Narrative Studies 1 pp.43–59.
 
 ### Implementation
+
+- Push and Pull Objects System on UE5 - Tutorial (2023) At: https://www.youtube.com/watch?v=v3JXpF4wl_o (Accessed  04/04/2025).
 
 
 
