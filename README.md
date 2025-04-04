@@ -151,7 +151,7 @@ This project aims to create a unique horror puzzle experience that balances fear
 
 
 
-## Research (Suggested Word Count 1,100) 1379 words
+## Research (Suggested Word Count 1,100) 
 ```
 ### Methodology  
 - Identify relevant sources for the project, including articles, documentation, talks, and games.  
@@ -336,7 +336,7 @@ Another problem that occurred was the footstep audio overlapping. This had occur
 <br>
 
 
-## Outcomes (Suggested Word Count 300) 82
+## Outcomes (Suggested Word Count 300) 
 
 
 
@@ -363,7 +363,7 @@ Within the repository, the first two files that you will find are the project fi
 - The video should showcase key features, functionality, and any unique elements of your project.  
 - Include a brief commentary or text overlay in the video to explain the different aspects of your project as they are shown.
 ```
-## Reflection (Suggested Word Count 500) 349
+## Reflection (Suggested Word Count 500)
 ```
 ### Research Effectiveness  
 - Assess the usefulness of the research conducted during the project.  
@@ -391,6 +391,8 @@ The research I did into Little Nightmares 2 was very useful when it came to maki
 One thing that went well in the project was getting the cameras to work with where the player moved to. Having different preset camera angles instead of just having the camera follow the player really made the game feel more like Little Nightmares instead of a third-person RPG game. The cameras also helped players find where they needed to go more easily; when we did the first playtests before the cameras were implemented, people did not know where to go and were very confused about what they had to do but after they were added, people found their way to the codes a lot easier.
 
 Something that didn't go well when working on the project was the lack of communication. Communication can be difficult in a group of seven people so that's why we made a Trello board and a milanote and also assigned tasks to each team member but even after that only three of us seemed to be communicating. This led to 3D assets starting to be created within the last two weeks, leaving the designers to have to use prefabs and the animator to not have any assets to animate. 
+
+Something else that didn't go well is the lack of narrative immersion that we added into the scene. This was also caused by the lack of communication and the 3D assets being started late. The only form of narrative we were able to add is a few parts of narrative within the scene and audio within the project.
 
 What I would do differently next time I would plan more progress meetings for the whole group so that everyone knew what needed to be done at the time and to see how everyone was doing and what had been done so far. Also, I would start programming sooner as I feel that we left programming too late and some key features, such as my pushing and pulling box script, needed to be removed within the last week as they were clunky and didn't work.
 ## Bibliography  
