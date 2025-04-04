@@ -120,12 +120,9 @@ This project is a 3D horror puzzle game inspired by Little Nightmares 2. The pla
 
 ## Narrative  
 
-The game will incorporate narrative immersion by adding assets that tell a story throughout the scene, similar to *Little Nightmares*. Small environmental details will hint at the world’s deeper lore, allowing players to piece together the narrative through exploration rather than direct exposition.  
+The game will incorporate narrative immersion by adding assets that tell a story throughout the scene, similar to Little Nightmares. Small environmental details will hint at the world’s deeper lore, allowing players to piece together the narrative through exploration rather than direct exposition.  
 
 Each level will reflect elements of the protagonist’s fears, with unsettling visuals and interactive objects that reveal fragments of the story. Subtle environmental storytelling, such as worn-out toys, eerie drawings, or cryptic messages, will encourage players to speculate about the world and their role in it.  
-
-Sound design will also play a role in storytelling, with distant whispers, unsettling creaks, and changes in ambiance reinforcing key moments. By using these techniques, we aim to create an immersive experience where the story unfolds naturally as players progress.  
-
 
 ## Core Gameplay Mechanics  
 The player carries a small candle that helps them see, but they can also light larger candles placed around the room. If the player stays in the dark for too long, they will die and have to restart. The primary puzzle mechanic involves finding and inputting a combination code hidden in the room to unlock a diary, which contains a key that unlocks the window—the player’s ultimate escape route.  
