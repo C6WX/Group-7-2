@@ -10,23 +10,22 @@ FGCT4016
 
 Weighting: 100%
 
+Chosen Question: 1. What are the different ways in which the experience of immersion has been theorised, and which theorisation, if any, is most relevant to video games? Draw on relevant scholarship and your analysis of appropriate video game examples.  
+
 ## Brief
 
 <!-- TODO: Get the brief from liam and fill this in -->
 
 <!-- TODO: Confirm topics with Maggie -->
 
-Your development commentary must detail your individual input to the project, the research conducted and its application. Your research must be centred around answering **ONE** of the following questions:
+```
+ Your development commentary must detail your individual input to the project, the research conducted and its application. Your research must be centred around answering **ONE** of the following questions:
 1. What are the different ways in which the experience of immersion has been theorised, and which theorisation, if any, is most relevant to video games? Draw on relevant scholarship and your analysis of appropriate video game examples. 
 2. Will video games inevitably mature into a new narrative artform driven by their storytelling ambitions? Consider different narrative structures deployed by game designers and the player’s role in experiencing and constructing game stories.  
 3. What does it mean to approach a video game from a ludological standpoint, and should theories relating to rules, games, and play be central to the analysis of video games?  
 4. How does the design of video game space affect the actions and experiences of players? Consider how different game spaces have been categorised in the literature and concepts of space and place discussed in the lecture.  
 5. What are the key similarities and differences between the formal aspects of the video game and film? And, what can the answer to this question tell us about the relationship between them? Consider aspects like narrative and the concept of remediation covered in lecture six. 
 6. Are all video games essentially simulations that give players a new degree of control over media texts, or does considering the medium through the concept of simulation suggest it has the power to train their players to behave in certain ways? 
-
-## Chosen Question
-
-1. What are the different ways in which the experience of immersion has been theorised, and which theorisation, if any, is most relevant to video games? Draw on relevant scholarship and your analysis of appropriate video game examples.
 
 ## Key Requirements
 
@@ -113,48 +112,40 @@ You are required to research **at least one source from each of the following ca
 - Provide a concise description of the project, including its core concept and purpose.  
 - Outline the initial goals or objectives you aim to achieve.  
 - Identify any anticipated challenges or potential issues that may arise during development.
- 
-# Project Outline
+ ```
+# Project Outline: Boogeyman’s Lullaby  
 
-## 1. Introduction  
-This project is a 3D horror puzzle game inspired by Little Nightmares 2 (Little Nightmares 2, Supermassive Games, 2021). The player takes on the role of a child trapped in a large, old-fashioned wooden bedroom, trying to escape from the Boogeyman who stalks them in the darkness. To survive, they must navigate the dark using candles while solving puzzles to unlock an escape route. The game will focus on atmospheric horror, tension-building audio, and immersive puzzle mechanics.  
+## Introduction  
+This project is a 3D horror puzzle game inspired by Little Nightmares 2. The player takes on the role of a child trapped in a large, old-fashioned wooden bedroom, trying to escape from the Boogeyman. To survive, they must navigate the dark using candles while solving puzzles to unlock an escape route. The game will focus on atmospheric horror, tension-building audio, and immersive puzzle mechanics.  
 
-## 2. Core Gameplay Mechanics  
-- Light vs. Darkness: The player carries a small candle that helps them see. They can also light larger candles placed around the room to protect them from the boogyman.  
-- Danger of Darkness: If the player stays in the dark for too long, they will be killed and have to restart.  
-- Puzzle Solving: The player must find and input a combination code hidden in the room to unlock a diary.  
-- Objective & Escape: Inside the diary is a key that unlocks the window or door, allowing the player to escape.  
+## Core Gameplay Mechanics  
+The player carries a small candle that helps them see, but they can also light larger candles placed around the room. If the player stays in the dark for too long, they will die and have to restart. The primary puzzle mechanic involves finding and inputting a combination code hidden in the room to unlock a diary, which contains a key that unlocks the window—the player’s ultimate escape route.  
 
-## 3. Key Features & Design Goals  
+## Key Features & Design Goals  
 
-### 3.1 Gameplay & Mechanics  
-- A working, playable game with puzzles that challenge the player’s ability to explore and think critically.  
-- The candle-lighting system as a central mechanic for survival and exploration.  
+### Gameplay & Mechanics  
+The game will feature a working, playable experience with puzzles that challenge the player’s ability to explore and think critically. A progression system will keep the player engaged while maintaining suspense. The candle-lighting system will be the central survival and exploration mechanic, requiring players to manage their light sources carefully.  
 
-### 3.2 Atmosphere & Sound Design  
-- Tension-building audio with eerie sounds, whispers, creaking wood, and distant footsteps.  
-- A dynamic soundtrack that reacts to the player's actions (e.g., heart-pounding music when the Boogeyman is near).  
+### Atmosphere & Sound Design  
+A tension-building audio system will include eerie sounds, whispers, creaking wood, and distant footsteps to immerse the player. The soundtrack will be dynamic, reacting to the player's actions, such as heart-pounding music when the Boogeyman is near. 3D spatial audio will enhance directional awareness, allowing players to hear the Boogeyman’s presence before seeing him.  
 
-### 3.3 Visual & Art Style  
-- 3D models designed to fit an *ld-fashioned, wooden children's bedroom setting.  
-- Dark, moody lighting effects that make shadows and candlelight feel realistic.  
-- The Boogeyman’s design should be unsettling, with fluid yet unnatural animations.  
+### Visual & Art Style  
+The game will feature 3D models designed to fit an old-fashioned, wooden children's bedroom setting, with dark, moody lighting effects that make shadows and candlelight feel realistic. The Boogeyman’s design will be unsettling, with fluid yet unnatural animations to create a sense of dread.  
 
-## 4. Anticipated Challenges & Solutions  
+### AI & Monster Behavior  
+The Boogeyman will stalk the player, appearing when the darkness is too strong. His AI will react dynamically to the player’s actions, making each playthrough feel slightly different. Rather than relying on cheap jump scares, the horror will be built through subtle cues and unpredictable encounters, ensuring the player is always on edge.  
 
-### 4.1 Team Communication & Coordination  
-- The large team size and the fact that members have other projects may lead to delays and miscommunication.  
-- Solutions used:  
-  - Set up a trello board to track progress.  
-  - Regular meeting to ensure work is being complete.  
-  - Assigning specific roles and tasks so each team member has a clear focus.  
+## Anticipated Challenges & Solutions  
 
-### 4.2 Technical Development Challenges  
-- Implementing realistic candle-lighting mechanics and making the darkness system work smoothly.  
-- Ensuring puzzles are intuitive yet challenging enough to be engaging.  
+### Team Communication & Coordination  
+Since the team is large and members are working on other projects, communication breakdowns and delays may occur. To mitigate this, setting up a task management system such as Trello, Notion, or Slack will help track progress. Regular check-ins and updates will ensure accountability, and assigning specific roles will help each team member stay focused on their responsibilities.  
 
-## 5. Conclusion  
-This project aims to create a unique horror puzzle experience that balances fear, exploration, and problem-solving. By focusing on immersive sound design and detailed 3D environments, The game will deliver a tense and atmospheric experience. Overcoming development challenges, particularly team coordination and technical execution, will be crucial to achieving this vision.  
+### Technical Development Challenges  
+Implementing realistic candle-lighting mechanics and ensuring the darkness system functions smoothly will be a key challenge. The puzzles must be intuitive yet engaging, avoiding frustration while still maintaining difficulty. AI development will also be crucial, ensuring the Boogeyman’s movement and behavior feel organic and terrifying rather than predictable.  
+
+## Conclusion  
+This project aims to create a unique horror puzzle experience that balances fear, exploration, and problem-solving. By focusing on immersive sound design, detailed 3D environments, and intelligent AI, the game will deliver a tense and atmospheric experience. Overcoming development challenges, particularly team coordination and technical execution, will be crucial to achieving this vision.  
+
 
 
 ## Research (Suggested Word Count 1,100) 1379 words
@@ -218,7 +209,7 @@ Dying Light has always been one of my favourite games and one of the main reason
 Using the research I did on immersion, we came up with a narrative for the boogyman and used the research to help with level design for the game.
 
 ## Implementation (Suggested Word Count 1,100)  
-
+```
 ### Process
 - Provide a step-by-step breakdown of your development process, including key milestones and decisions made throughout the project.  
 - Highlight any tools, frameworks, or techniques used, and explain how they contributed to the implementation.  
@@ -239,7 +230,7 @@ Using the research I did on immersion, we came up with a narrative for the boogy
 - Provide details on how these issues were diagnosed and resolved.  
 - If any difficulties remain unresolved, explain the impact on the project and any mitigation strategies used to minimise their effect.  
 - Reflect on what you would do differently in future projects to avoid similar issues.
-
+```
 ### Movable Boxes
 The first step I did when creating the game was to program the pushable and pullable boxes.
 
@@ -257,7 +248,7 @@ The first step I did when creating the game was to program the pushable and pull
 https://github.com/C6WX/Group-7-2
 <br>
 <br>
-Within the repository, the first two files that you will find are the project files for the game. The first file is the Unreal engine config file and the second is the content file. The content file is mainly organised into a dynamic file and a static file however some files have been left in the main content file. The other files you will find in the repository are the gitignore file, the project file, the README file and the gitattributes file.
+Within the repository, the first two files that you will find are the project files for the game. The first file is the Unreal engine config file and the second is the content file. The content file is mainly organised into a dynamic file and a static file however some files have been left in the main content file. The other files you will find in the repository are the gitignore file, the project file, the [README file](https://github.com/C6WX/Group-7-2/blob/main/README.md) and the gitattributes file.
 
 ### Build Link
 - Share a link to a playable or executable build of your project.  
