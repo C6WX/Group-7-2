@@ -113,10 +113,10 @@ You are required to research **at least one source from each of the following ca
 - Outline the initial goals or objectives you aim to achieve.  
 - Identify any anticipated challenges or potential issues that may arise during development.
  ```
-# Project Outline: Boogeyman’s Lullaby  
+# Project Outline 
 
 ## Introduction  
-This project is a 3D horror puzzle game inspired by Little Nightmares 2. The player takes on the role of a child trapped in a large, old-fashioned wooden bedroom, trying to escape from the Boogeyman. To survive, they must navigate the dark using candles while solving puzzles to unlock an escape route. The game will focus on atmospheric horror, tension-building audio, and immersive puzzle mechanics.  
+This project is a 3D horror puzzle game inspired by Little Nightmares 2. The player takes on the role of a child trapped in a large, old-fashioned wooden bedroom, trying to escape from the Boogeyman. To survive, they must navigate the dark using candles while solving puzzles to unlock an escape route. The game will focus on atmospheric horror, tension-building audio, and immersive puzzle mechanics.
 
 ## Core Gameplay Mechanics  
 The player carries a small candle that helps them see, but they can also light larger candles placed around the room. If the player stays in the dark for too long, they will die and have to restart. The primary puzzle mechanic involves finding and inputting a combination code hidden in the room to unlock a diary, which contains a key that unlocks the window—the player’s ultimate escape route.  
@@ -132,9 +132,6 @@ A tension-building audio system will include eerie sounds, whispers, creaking wo
 ### Visual & Art Style  
 The game will feature 3D models designed to fit an old-fashioned, wooden children's bedroom setting, with dark, moody lighting effects that make shadows and candlelight feel realistic. The Boogeyman’s design will be unsettling, with fluid yet unnatural animations to create a sense of dread.  
 
-### AI & Monster Behavior  
-The Boogeyman will stalk the player, appearing when the darkness is too strong. His AI will react dynamically to the player’s actions, making each playthrough feel slightly different. Rather than relying on cheap jump scares, the horror will be built through subtle cues and unpredictable encounters, ensuring the player is always on edge.  
-
 ## Anticipated Challenges & Solutions  
 
 ### Team Communication & Coordination  
@@ -149,7 +146,7 @@ This project aims to create a unique horror puzzle experience that balances fear
 
 
 ## Research (Suggested Word Count 1,100) 1379 words
-
+```
 ### Methodology  
 - Identify relevant sources for the project, including articles, documentation, talks, and games.  
 - Detail how these sources have informed your practical work and influenced your approach.
@@ -168,6 +165,7 @@ This project aims to create a unique horror puzzle experience that balances fear
 ### Documentation Sources  
 - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
 - Explain how this technical knowledge supports your project work and guides your decision-making process.
+```
 
 ### Concept and Monsters
 The game that I researched to be able to make this project happen is Little Nightmares 2. I used multiple websites to research this game to get enough inspiration to create it. The first website I used was the game's main website (LITTLE NIGHTMARES II | Official Website (EN), 2021).
@@ -250,7 +248,11 @@ The box can be pushed and pulled by pressing E when the player enters it's colli
 <br>
 After creating the box blueprint, I hosted a playtest for the game and found out that people found the box to be very unfinished as it moved faster then the player, wouldn't move in the right direction or the player would get stuck moving slow as the box would cause them to leave the collision and then they wouldn't be able to re-enter the box to reset the movement speed. 
 <br>
-To fix these errors, I updated the box movement speed variable which allowed the box to move the same speed as the player and also made the boxes move the correct direction. However the box seemed to stop copying the player's movement when they tried to push it. As this error was discovered later into the project and there was still more to do, I tried some different changes to fix it but to no avail. So I chose to disable the box script for the submission and leave the box pushing to the Unreal Engine physics.
+To fix these errors, I updated the box movement speed variable which allowed the box to move the same speed as the player and also made the boxes move the correct direction. However the box seemed to stop copying the player's movement when they tried to push it. 
+<br>
+I decided to try a tutorial that was meant to pull objects towards the player when they got close so that there was still a form of pulling blocks in the game (Pull Actors Towards Target Tutorial | Unreal Engine, 2023). After following the video, which was very simple and easy to follow, the box wouldn't move as intended. I tried editing the script to try get it to work but to no avail. 
+<br>
+As this error was discovered later into the project and there was still more to do, I chose to disable the box script for the submission and leave the box pushing to the Unreal Engine physics.
 <br>
 <br>
 After the box, I created the candle safe zones and the darkness meter. The candles are used in the game to reduce the player's darkness levels and keep them safe temporarily and the darkness meter is used to track the players darkness value, the meter goes from 0 to 1 and when it reaches 1, the player dies and the scene restarts.
@@ -278,6 +280,8 @@ After the box, I created the candle safe zones and the darkness meter. The candl
 <br>
 The candles worked perfectly as intended however, during development, there was a bug with the candles that caused the player not to be able to lose darkness. This was due to the fact that the candles used two colliders, one to detect if the player touches the candle and one to have an area around the candle that the player can be in to reduce darkness, and once the player turned on the candle, they were already inside the candle area collider so begin overlap wouldn't activate. To fix this issue, I added an In Darkness variable that became true as soon as the player entered the safe area, no matter if the candle was active or not, to keep track of if the player is in it or not.
 <br>
+To create the darkness bar, I watched a tutorial on how to create progress bars (Unreal-5 Menu UI:  PROGRESS BARS Explained (60 SECONDS!!), 2023). The video was very quick and precise but worked very well as it helped me create and set up the darkness bar. 
+<br>
 <br>
 Next, I created a main menu that displays when the game starts. The main menu consists of two buttons, a start button that takes the player to the main scene, and a quit button that closes the application.
 <br>
@@ -291,6 +295,10 @@ Next, I created a main menu that displays when the game starts. The main menu co
 *Figure 14. Input controller for the main menu that locks the input to mouse only.*
 <br>
 There were no errors when it came to creating the main menu, however I did have to watch a few tutorials to create it and force the player's input to be the mouse only.
+<br>
+The first tutorial I watched was on how to set up a main menu (How To Build MENUS AND UI In UE5 | Unreal Engine 5 Beginner Tutorial, 2022). The video goes over the basics of setting up a main menu and UI. I found this video very helpful when it came to setting up the UI and the main menu, however it didn't cover background images, which I needed for my game, so I used a different tutorial for that.
+<br>
+The other tutorial I used (How To Create A Main Menu - Unreal Engine 5 Tutorial, 2022) covered more about main menus and discussed setting up a background image which allowed me to add an image of the game's starting scene to the main menu. Also this tutorial covered setting up controls for the main menu, which helped me avoid issues with the players changing control types.
 <br>
 <br>
 Once the main menu was finished, I started adding the audio into the game. One of the audio scripts have already been shown in figure 5.
@@ -371,6 +379,7 @@ Within the repository, the first two files that you will find are the project fi
 - Suggest improvements to your workflow, research methods, or implementation process based on your reflections.  
 - Consider any new tools, techniques, or approaches you would explore in future projects to achieve better results.
 ```
+
 The research I did into Little Nightmares 2 was very useful when it came to making this project as it shows what works and what doesn't work when making a narrative horror game. The main part of the research that helped was the research I did into the lighting within the game and also the monsters in the game as it helped set the scene and create the boogieman monster.
 
 One thing that went well in the project was getting the cameras to work with where the player moved to. Having different preset camera angles instead of just having the camera follow the player really made the game feel more like Little Nightmares instead of a third-person RPG game. The cameras also helped players find where they needed to go more easily; when we did the first playtests before the cameras were implemented, people did not know where to go and were very confused about what they had to do but after they were added, people found their way to the codes a lot easier.
@@ -388,13 +397,15 @@ What I would do differently next time is I would plan more progress meetings for
 
 ### Implementation
 
+- Pull Actors Towards Target Tutorial | Unreal Engine (2023) At: https://www.youtube.com/watch?v=OP-v2xQNcFc (Accessed  26/03/2025).
 - Push and Pull Objects System on UE5 - Tutorial (2023) At: https://www.youtube.com/watch?v=v3JXpF4wl_o (Accessed  12/03/2025).
+- Unreal-5 Menu UI:  PROGRESS BARS Explained (60 SECONDS!!) (2023) At: https://www.youtube.com/watch?v=TBGAc1Gj-tM (Accessed  20/03/2025).
 - Unreal Engine - Sound and Music In 6 Minutes (2021) At: https://www.youtube.com/watch?v=1GJRoUJvijw (Accessed  28/03/2025).
 - MetaSounds in UE5: From Miniguns to Music | Unreal Engine (2021) At: https://www.youtube.com/watch?v=3230-FwCts0 (Accessed  31/03/2025).
 - UE5 Metasounds fade in and out tutorial (2023) At: https://www.youtube.com/watch?v=5__cnje1DQM (Accessed  31/03/2025).
 - UE4 Tutorial: Footstep Sounds on Different Materials (Request) (2018) At: https://www.youtube.com/watch?v=LPtDqsMFFys (Accessed  28/03/2025).
-
-
+- How To Build MENUS AND UI In UE5 | Unreal Engine 5 Beginner Tutorial (2022) At: https://www.youtube.com/watch?v=198AMGtdo-E (Accessed  20/03/2025).
+- How To Create A Main Menu - Unreal Engine 5 Tutorial (2022) At: https://www.youtube.com/watch?v=kumZj_mov58 (Accessed  23/03/2025).
 
 
 
