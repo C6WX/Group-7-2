@@ -235,7 +235,7 @@ Using the research I did on immersion, we came up with a narrative for the boogy
 - If any difficulties remain unresolved, explain the impact on the project and any mitigation strategies used to minimise their effect.  
 - Reflect on what you would do differently in future projects to avoid similar issues.
 ```
-### Movable Boxes
+
 The first step I did when creating the game was to program the pushable and pullable boxes. The boxes are used to reach tall places within the game.
 
 <iframe width="600" height="600" src="https://blueprintue.com/render/sn6a9i_-/" scrolling="no" allowfullscreen></iframe>
