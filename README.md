@@ -206,11 +206,11 @@ Within the repository, the first two files that you will find are the project fi
 
 ### Build Link
 
+https://c6wx.itch.io/lurking-in-the-dark
 
 ### Video Demonstration
-- Embed a video or provide a link to a recorded demonstration of your project in action.  
-- The video should showcase key features, functionality, and any unique elements of your project.  
-- Include a brief commentary or text overlay in the video to explain the different aspects of your project as they are shown.
+
+https://youtu.be/KRhyEIv6tSM
 
 ## Reflection
 
