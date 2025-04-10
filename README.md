@@ -17,7 +17,7 @@ Chosen Question: 1. What are the different ways in which the experience of immer
 # Project Outline 
 
 ## Introduction  
-This project is a 3D horror puzzle game inspired by Little Nightmares 2. The player takes on the role of a child trapped in a large, old-fashioned wooden bedroom, trying to escape from the Booeyman. To survive, they must navigate the dark using candles while solving puzzles to unlock an escape route. The game will focus on atmospheric horror, tension-building audio, and immersive puzzle mechanics.
+This project is a 3D horror puzzle game inspired by Little Nightmares 2. The player takes on the role of a child trapped in a large, old-fashioned wooden bedroom, trying to escape from the Boogeyman. To survive, they must navigate the dark using candles while solving puzzles to unlock an escape route. The game will focus on atmospheric horror, tension-building audio, and immersive puzzle mechanics.
 
 ## Narrative  
 
