@@ -96,17 +96,24 @@ Using the research I did on immersion, we came up with a narrative for the boogy
 ## Implementation 
 
 The first step in development was programming the pushable/pullable boxes, which help players reach higher areas. Pressing E near a box enables push/pull mode—reducing player speed and syncing box movement with the player until E is pressed again.
-
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/sn6a9i_-/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 1. When E is pressed, and the player is colliding with the box, reduce their speed and set Is Interacting Box to true and turns on the box's physics. If E is pressed when the player is not touching the box or if they were already interacting with the box, their movement speed is reset and Is Interacting Box is set to false.* 
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/ngidoxdv/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 2. Changes the boxs location based on the location and movement of the player.*
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/fc0kcmm4/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 3. Changes the Can Interact With Box variable so that the player is able to enter the push mode shown in figure 1.*
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/lgaj23xz/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 4. Moves the box based on the direction the player is moving and the box's movement speed.*
 <br>
 I followed a YouTube tutorial to create the script (Push and Pull Objects System on UE5 - Tutorial, 2023). The tutorial was very helpful but after I followed along with it, there were lots of problems with the script which I discovered most within the playtest. The tutorial was also harder to follow as the creator was building it alongside their own project.
@@ -122,25 +129,39 @@ As this error was discovered later into the project and there was still more to 
 <br>
 After the box, I created candle safe zones and a darkness meter. Candles temporarily reduce the player's darkness level, while the meter tracks it from 0 to 1—reaching 1 results in death and a scene restart.
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/fwjamk0-/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 5. Candle blueprint that sets the candle to be visable and play audio when the player collides with it and then gets a random value that is used as a countdown to when the candle deactivates. When the candle deactivates, based on the amount of codes that the player has collected, one of two blow out noises will play to show the anger of the boogieman increasing.*
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/duscoz3c/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 6. When the player is inside the safe area collider on the candle, the enter candle script is activated. This script is shown in figure 8. When the player leaves the candle's safe area collider, the enter darkness script is activated, which is shown in figure 7.*
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/m00k96rf/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 7. When the player isn't near a candle, the value of the darkness increases by 0.01 every o.5 seconds. This script is activated at the start of the game and in the candle script shown in figure 5.*
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/aclpye8g/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 8. When the player is within the collision of a candle, the darkness variable is reduced by 0.075 every 0.5 seconds. This script is actived in the candle script shown in figure 5.*
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/83c2_u6k/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 9. This script destroys the player actor if darkness reaches the value of 1 and then reloads the scene. Also this script stops the darkness variable from dropping below 0 when the candle reduces the value.*
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/q2wisjnu/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 10. Converts the darkness value into a percentage that can be displayer on the bar.*
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/bbs8e__t/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 11. Displays the darkness meter on the UI.*
 <br>
 The candles functioned as intended, but a bug prevented darkness from decreasing. This happened because the player was already inside the candle’s area collider when it was activated, so the “begin overlap” event didn’t trigger. I fixed this by adding an In Darkness variable to track whether the player was in the safe zone, regardless of whether the candle was lit.
@@ -150,13 +171,19 @@ To create the darkness bar, I watched a tutorial on how to create progress bars 
 <br>
 Next, I created a main menu that displays when the game starts. The main menu consists of two buttons, a start button that takes the player to the main scene, and a quit button that closes the application.
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/11bbo4qu/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 12. When the start button is pressed, the main scene is loaded and the input mode is set back to the player controller.*
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/g0q1dmdo/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 13. When the quit button is pressed, the game closes.*
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/ej8ccobt/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 14. Input controller for the main menu that locks the input to mouse only.*
 <br>
 There were no errors when it came to creating the main menu, however, I did have to watch a few tutorials to create it and force the player's input to be the mouse only.
@@ -168,23 +195,36 @@ The other tutorial I used (How To Create A Main Menu - Unreal Engine 5 Tutorial,
 <br>
 Once the main menu was finished, I started adding the audio to the game. One of the audio scripts has already been shown in Figure 5.
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/iy-z14gi/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 15. The script that plays the box pushing audio when the player collides with the box and stops the audio when the player stops colliding with it.*
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/78gr1xrc/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 16. Whenever the player lands on the floor after jumping or falling, the landing audio is played.*
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/uvjjma0-/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 17. Whilst the player is colliding with the ball, the rolling audio plays. Once the player stops colliding with the ball, the audio stops.*
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/ed359ygv/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 18. Using animnotifies whenever the player's feet touch the ground to run the script, footstep audio is played.*
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/uaudnq-i/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 19. Using random float in range and branch nodes, this script plays one of two different noises every 15 to 30 seconds.*
 <br>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/9qrn8ly0/" scrolling="no" allowfullscreen></iframe>
+<br>
 *Figure 20. The blueprint layout that I used for both of the meta sounds in the game.*
+<br>
 <br>
 I added audio to the game using YouTube tutorials to learn Unreal Engine’s audio cues(Unreal Engine - Sound and Music In 6 Minutes, 2021). The tutorial helped me set up most sounds, except for the ball and box-pushing audio.
 <br>
@@ -199,18 +239,18 @@ I also had a problem with overlapping footstep sounds caused by using event tick
 
 ### Source Code/Project Files
 
-https://github.com/C6WX/Group-7-2
+[Project Files](https://github.com/C6WX/Group-7-2)
 <br>
 <br>
 Within the repository, the first two files that you will find are the project files for the game. The first file is the Unreal engine [config file](https://github.com/C6WX/Group-7-2/tree/main/Config) and the second is the [content file](https://github.com/C6WX/Group-7-2/tree/main/Content). The content file is mainly organised into a [dynamic file](https://github.com/C6WX/Group-7-2/tree/main/Content/Dynamic) and a [static file](https://github.com/C6WX/Group-7-2/tree/main/Content/Static) however some files have been left in the main content file. The other files you will find in the repository are the [gitignore file](https://github.com/C6WX/Group-7-2/blob/main/.gitignore), the project file, the [README file](https://github.com/C6WX/Group-7-2/blob/main/README.md) and the [gitattributes file](https://github.com/C6WX/Group-7-2/blob/main/gitattributes.txt).
 
 ### Build Link
 
-https://c6wx.itch.io/lurking-in-the-dark
+[Lurking In The Dark](https://c6wx.itch.io/lurking-in-the-dark)
 
 ### Video Demonstration
 
-https://youtu.be/KRhyEIv6tSM
+[Lurking In The Dark Gameplay Commentary](https://youtu.be/KRhyEIv6tSM)
 
 ## Reflection
 
@@ -246,21 +286,21 @@ Next time, I’d schedule regular team meetings to track progress and ensure cla
 
 
 ## Declared Assets
-Placeholder assets - https://www.fab.com/listings/c65a8dd1-ec4c-409c-9919-5eda4f764772
+[Placeholder assets](https://www.fab.com/listings/c65a8dd1-ec4c-409c-9919-5eda4f764772)
 <br>
 <br>
 Audio:
-1. Blowing out candle 1: https://pixabay.com/sound-effects/man-blowing-candle-out-102026/
-2. Blowing out candle 2: https://pixabay.com/sound-effects/blowing-out-candlewav-14441/
-3. Code collecting: https://pixabay.com/sound-effects/paper-collect-1-186598/
-4. Window opening: https://pixabay.com/sound-effects/window-open-89994/
-5. Door opening:https://pixabay.com/sound-effects/door-creaking-121673/
-6. Creaking Wood: https://pixabay.com/sound-effects/creaking-wood-199971/ 
-7. Ball Rolling: https://pixabay.com/sound-effects/026891-rolling-ball-wood-floor-64310/
-8. Candle Lighting: https://pixabay.com/sound-effects/candle-lighting-47691/
-9. Box Sliding: https://pixabay.com/sound-effects/wooden-chair-slide-scrape-on-wood-floor-75857/
-10. Boogieman sound 1: https://pixabay.com/sound-effects/poltergeist-making-noises-234019/
-11. Boogieman Sound 2: https://pixabay.com/sound-effects/scary-foley-86229/
+1. [Blowing out candle 1](https://pixabay.com/sound-effects/man-blowing-candle-out-102026/)
+2. [Blowing out candle 2](https://pixabay.com/sound-effects/blowing-out-candlewav-14441/)
+3. [Code collecting](https://pixabay.com/sound-effects/paper-collect-1-186598/)
+4. [Window opening](https://pixabay.com/sound-effects/window-open-89994/)
+5. [Door opening](https://pixabay.com/sound-effects/door-creaking-121673/)
+6. [Creaking Wood](https://pixabay.com/sound-effects/creaking-wood-199971/)
+7. [Ball Rolling](https://pixabay.com/sound-effects/026891-rolling-ball-wood-floor-64310/)
+8. [Candle Lighting](https://pixabay.com/sound-effects/candle-lighting-47691/)
+9. [Box Sliding](https://pixabay.com/sound-effects/wooden-chair-slide-scrape-on-wood-floor-75857/)
+10. [Boogieman sound 1](https://pixabay.com/sound-effects/poltergeist-making-noises-234019/)
+11. [Boogieman Sound 2](https://pixabay.com/sound-effects/scary-foley-86229/)
 
 <br>
 <br>
