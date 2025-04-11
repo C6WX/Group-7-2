@@ -103,6 +103,7 @@ The first step in development was programming the pushable/pullable boxes, which
 *Figure 1. When E is pressed, and the player is colliding with the box, reduce their speed and set Is Interacting Box to true and turns on the box's physics. If E is pressed when the player is not touching the box or if they were already interacting with the box, their movement speed is reset and Is Interacting Box is set to false.*
 <br>
 <br>
+
 <iframe width="600" height="600" src="https://blueprintue.com/render/ngidoxdv/" scrolling="no" allowfullscreen></iframe>
 <br>
 
@@ -119,6 +120,10 @@ The first step in development was programming the pushable/pullable boxes, which
 <br>
 
 *Figure 4. Moves the box based on the direction the player is moving and the box's movement speed.*
+<br>
+
+![Pushable Box](https://raw.githubusercontent.com/C6WX/Images/refs/heads/main/box.png)
+
 <br>
 <br>
 I followed a YouTube tutorial to create the script (Push and Pull Objects System on UE5 - Tutorial, 2023). The tutorial was very helpful but after I followed along with it, there were lots of problems with the script which I discovered most within the playtest. The tutorial was also harder to follow as the creator was building it alongside their own project.
@@ -137,8 +142,14 @@ After the box, I created candle safe zones and a darkness meter. Candles tempora
 <br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/fwjamk0-/" scrolling="no" allowfullscreen></iframe>
 <br>
-
+<br>
 *Figure 5. Candle blueprint that sets the candle to be visable and play audio when the player collides with it and then gets a random value that is used as a countdown to when the candle deactivates. When the candle deactivates, based on the amount of codes that the player has collected, one of two blow out noises will play to show the anger of the boogieman increasing.*
+<br>
+
+![Candle Lit](https://raw.githubusercontent.com/C6WX/Images/refs/heads/main/Candle%20Lit.png)
+<br>
+
+![Candle Unlit](https://raw.githubusercontent.com/C6WX/Images/refs/heads/main/Candle%20Unlit.png)
 <br>
 <br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/duscoz3c/" scrolling="no" allowfullscreen></iframe>
@@ -196,6 +207,9 @@ Next, I created a main menu that displays when the game starts. The main menu co
 
 *Figure 13. When the quit button is pressed, the game closes.*
 <br>
+
+![Main Menu](https://raw.githubusercontent.com/C6WX/Images/refs/heads/main/main%20menu.png)
+<br>
 <br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/ej8ccobt/" scrolling="no" allowfullscreen></iframe>
 <br>
@@ -235,6 +249,9 @@ Once the main menu was finished, I started adding the audio to the game. One of 
 <br>
 
 *Figure 18. Using animnotifies whenever the player's feet touch the ground to run the script, footstep audio is played.*
+<br>
+
+![Animnotify Showcase](https://raw.githubusercontent.com/C6WX/Images/refs/heads/main/Animnotify.png)
 <br>
 <br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/uaudnq-i/" scrolling="no" allowfullscreen></iframe>
@@ -296,17 +313,15 @@ Next time, I’d schedule regular team meetings to track progress and ensure cla
 
 ### Implementation
 
-- Pull Actors Towards Target Tutorial | Unreal Engine (2023) At: https://www.youtube.com/watch?v=OP-v2xQNcFc (Accessed  26/03/2025).
-- Push and Pull Objects System on UE5 - Tutorial (2023) At: https://www.youtube.com/watch?v=v3JXpF4wl_o (Accessed  12/03/2025).
-- Unreal-5 Menu UI:  PROGRESS BARS Explained (60 SECONDS!!) (2023) At: https://www.youtube.com/watch?v=TBGAc1Gj-tM (Accessed  20/03/2025).
-- Unreal Engine - Sound and Music In 6 Minutes (2021) At: https://www.youtube.com/watch?v=1GJRoUJvijw (Accessed  28/03/2025).
-- MetaSounds in UE5: From Miniguns to Music | Unreal Engine (2021) At: https://www.youtube.com/watch?v=3230-FwCts0 (Accessed  31/03/2025).
-- UE5 Metasounds fade in and out tutorial (2023) At: https://www.youtube.com/watch?v=5__cnje1DQM (Accessed  31/03/2025).
-- UE4 Tutorial: Footstep Sounds on Different Materials (Request) (2018) At: https://www.youtube.com/watch?v=LPtDqsMFFys (Accessed  28/03/2025).
 - How To Build MENUS AND UI In UE5 | Unreal Engine 5 Beginner Tutorial (2022) At: https://www.youtube.com/watch?v=198AMGtdo-E (Accessed  20/03/2025).
 - How To Create A Main Menu - Unreal Engine 5 Tutorial (2022) At: https://www.youtube.com/watch?v=kumZj_mov58 (Accessed  23/03/2025).
-
-
+- MetaSounds in UE5: From Miniguns to Music | Unreal Engine (2021) At: https://www.youtube.com/watch?v=3230-FwCts0 (Accessed  31/03/2025).
+- Pull Actors Towards Target Tutorial | Unreal Engine (2023) At: https://www.youtube.com/watch?v=OP-v2xQNcFc (Accessed  26/03/2025).
+- Push and Pull Objects System on UE5 - Tutorial (2023) At: https://www.youtube.com/watch?v=v3JXpF4wl_o (Accessed  12/03/2025).
+- UE4 Tutorial: Footstep Sounds on Different Materials (Request) (2018) At: https://www.youtube.com/watch?v=LPtDqsMFFys (Accessed  28/03/2025).
+- Unreal-5 Menu UI:  PROGRESS BARS Explained (60 SECONDS!!) (2023) At: https://www.youtube.com/watch?v=TBGAc1Gj-tM (Accessed  20/03/2025).
+- UE5 Metasounds fade in and out tutorial (2023) At: https://www.youtube.com/watch?v=5__cnje1DQM (Accessed  31/03/2025).
+- Unreal Engine - Sound and Music In 6 Minutes (2021) At: https://www.youtube.com/watch?v=1GJRoUJvijw (Accessed  28/03/2025).
 
 ## Declared Assets
 [Placeholder assets](https://www.fab.com/listings/c65a8dd1-ec4c-409c-9919-5eda4f764772)
@@ -324,8 +339,9 @@ Audio:
 9. [Box Sliding](https://pixabay.com/sound-effects/wooden-chair-slide-scrape-on-wood-floor-75857/)
 10. [Boogieman sound 1](https://pixabay.com/sound-effects/poltergeist-making-noises-234019/)
 11. [Boogieman Sound 2](https://pixabay.com/sound-effects/scary-foley-86229/)
-
 <br>
 <br>
+The following assets were modified using ChatGPT 4o:
+- README.md
 <br>
 <br>
