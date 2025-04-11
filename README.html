@@ -437,25 +437,32 @@ of a storyworld that relies on purely mental activity.&quot; In my opinion, this
 <iframe width="600" height="600" src="https://blueprintue.com/render/lgaj23xz/" scrolling="no" allowfullscreen></iframe>
 <br>
 <p><em>Figure 4. Moves the box based on the direction the player is moving and the box's movement speed.</em>
+<br></p>
+<p><img src="https://raw.githubusercontent.com/C6WX/Images/refs/heads/main/box.png" alt="Pushable Box"></p>
 <br>
 <br>
 I followed a YouTube tutorial to create the script (Push and Pull Objects System on UE5 - Tutorial, 2023). The tutorial was very helpful but after I followed along with it, there were lots of problems with the script which I discovered most within the playtest. The tutorial was also harder to follow as the creator was building it alongside their own project.
 <br>
-After creating the box blueprint, I hosted a playtest for the game and found out that people found the box to be very unfinished as it moved faster than the player, wouldn't move in the right direction or the player would get stuck moving slowly as the box would cause them to leave the collision and then they wouldn't be able to re-enter the box to reset the movement speed.
+After creating the box blueprint, I hosted a playtest for the game and found out that people found the box to be very unfinished as it moved faster than the player, wouldn't move in the right direction or the player would get stuck moving slowly as the box would cause them to leave the collision and then they wouldn't be able to re-enter the box to reset the movement speed. 
 <br>
-To fix these errors, I updated the box movement speed variable which allowed the box to move at the same speed as the player and also made the boxes move in the correct direction. However, the box seemed to stop copying the player's movement when they tried to push it.
+To fix these errors, I updated the box movement speed variable which allowed the box to move at the same speed as the player and also made the boxes move in the correct direction. However, the box seemed to stop copying the player's movement when they tried to push it. 
 <br>
-I decided to try a tutorial that was meant to pull objects towards the player when they got close so that there was still a form of pulling blocks in the game (Pull Actors Towards Target Tutorial | Unreal Engine, 2023). After following the video, which was very simple and easy to follow, the box wouldn't move as intended. I tried editing the script to try to get it to work but to no avail.
+I decided to try a tutorial that was meant to pull objects towards the player when they got close so that there was still a form of pulling blocks in the game (Pull Actors Towards Target Tutorial | Unreal Engine, 2023). After following the video, which was very simple and easy to follow, the box wouldn't move as intended. I tried editing the script to try to get it to work but to no avail. 
 <br>
 As this error was discovered later into the project and there was still more to do, I chose to disable the box script for the submission and leave the box pushing to the Unreal Engine physics.
 <br>
 <br>
 After the box, I created candle safe zones and a darkness meter. Candles temporarily reduce the player's darkness level, while the meter tracks it from 0 to 1—reaching 1 results in death and a scene restart.
 <br>
-<br></p>
+<br>
 <iframe width="600" height="600" src="https://blueprintue.com/render/fwjamk0-/" scrolling="no" allowfullscreen></iframe>
 <br>
-<p><em>Figure 5. Candle blueprint that sets the candle to be visable and play audio when the player collides with it and then gets a random value that is used as a countdown to when the candle deactivates. When the candle deactivates, based on the amount of codes that the player has collected, one of two blow out noises will play to show the anger of the boogieman increasing.</em>
+<br>
+*Figure 5. Candle blueprint that sets the candle to be visable and play audio when the player collides with it and then gets a random value that is used as a countdown to when the candle deactivates. When the candle deactivates, based on the amount of codes that the player has collected, one of two blow out noises will play to show the anger of the boogieman increasing.*
+<br>
+<p><img src="https://raw.githubusercontent.com/C6WX/Images/refs/heads/main/Candle Lit.png" alt="Candle Lit">
+<br></p>
+<p><img src="https://raw.githubusercontent.com/C6WX/Images/refs/heads/main/Candle Unlit.png" alt="Candle Unlit">
 <br>
 <br></p>
 <iframe width="600" height="600" src="https://blueprintue.com/render/duscoz3c/" scrolling="no" allowfullscreen></iframe>
@@ -504,6 +511,8 @@ Next, I created a main menu that displays when the game starts. The main menu co
 <iframe width="600" height="600" src="https://blueprintue.com/render/g0q1dmdo/" scrolling="no" allowfullscreen></iframe>
 <br>
 <p><em>Figure 13. When the quit button is pressed, the game closes.</em>
+<br></p>
+<p><img src="https://raw.githubusercontent.com/C6WX/Images/refs/heads/main/main menu.png" alt="Main Menu">
 <br>
 <br></p>
 <iframe width="600" height="600" src="https://blueprintue.com/render/ej8ccobt/" scrolling="no" allowfullscreen></iframe>
@@ -539,6 +548,8 @@ Once the main menu was finished, I started adding the audio to the game. One of 
 <iframe width="600" height="600" src="https://blueprintue.com/render/ed359ygv/" scrolling="no" allowfullscreen></iframe>
 <br>
 <p><em>Figure 18. Using animnotifies whenever the player's feet touch the ground to run the script, footstep audio is played.</em>
+<br></p>
+<p><img src="https://raw.githubusercontent.com/C6WX/Images/refs/heads/main/Animnotify.png" alt="Animnotify Showcase">
 <br>
 <br></p>
 <iframe width="600" height="600" src="https://blueprintue.com/render/uaudnq-i/" scrolling="no" allowfullscreen></iframe>
@@ -583,15 +594,15 @@ Within the repository, the first two files that you will find are the project fi
 </ul>
 <h3 id="implementation">Implementation</h3>
 <ul>
-<li>Pull Actors Towards Target Tutorial | Unreal Engine (2023) At: https://www.youtube.com/watch?v=OP-v2xQNcFc (Accessed  26/03/2025).</li>
-<li>Push and Pull Objects System on UE5 - Tutorial (2023) At: https://www.youtube.com/watch?v=v3JXpF4wl_o (Accessed  12/03/2025).</li>
-<li>Unreal-5 Menu UI:  PROGRESS BARS Explained (60 SECONDS!!) (2023) At: https://www.youtube.com/watch?v=TBGAc1Gj-tM (Accessed  20/03/2025).</li>
-<li>Unreal Engine - Sound and Music In 6 Minutes (2021) At: https://www.youtube.com/watch?v=1GJRoUJvijw (Accessed  28/03/2025).</li>
-<li>MetaSounds in UE5: From Miniguns to Music | Unreal Engine (2021) At: https://www.youtube.com/watch?v=3230-FwCts0 (Accessed  31/03/2025).</li>
-<li>UE5 Metasounds fade in and out tutorial (2023) At: https://www.youtube.com/watch?v=5__cnje1DQM (Accessed  31/03/2025).</li>
-<li>UE4 Tutorial: Footstep Sounds on Different Materials (Request) (2018) At: https://www.youtube.com/watch?v=LPtDqsMFFys (Accessed  28/03/2025).</li>
 <li>How To Build MENUS AND UI In UE5 | Unreal Engine 5 Beginner Tutorial (2022) At: https://www.youtube.com/watch?v=198AMGtdo-E (Accessed  20/03/2025).</li>
 <li>How To Create A Main Menu - Unreal Engine 5 Tutorial (2022) At: https://www.youtube.com/watch?v=kumZj_mov58 (Accessed  23/03/2025).</li>
+<li>MetaSounds in UE5: From Miniguns to Music | Unreal Engine (2021) At: https://www.youtube.com/watch?v=3230-FwCts0 (Accessed  31/03/2025).</li>
+<li>Pull Actors Towards Target Tutorial | Unreal Engine (2023) At: https://www.youtube.com/watch?v=OP-v2xQNcFc (Accessed  26/03/2025).</li>
+<li>Push and Pull Objects System on UE5 - Tutorial (2023) At: https://www.youtube.com/watch?v=v3JXpF4wl_o (Accessed  12/03/2025).</li>
+<li>UE4 Tutorial: Footstep Sounds on Different Materials (Request) (2018) At: https://www.youtube.com/watch?v=LPtDqsMFFys (Accessed  28/03/2025).</li>
+<li>Unreal-5 Menu UI:  PROGRESS BARS Explained (60 SECONDS!!) (2023) At: https://www.youtube.com/watch?v=TBGAc1Gj-tM (Accessed  20/03/2025).</li>
+<li>UE5 Metasounds fade in and out tutorial (2023) At: https://www.youtube.com/watch?v=5__cnje1DQM (Accessed  31/03/2025).</li>
+<li>Unreal Engine - Sound and Music In 6 Minutes (2021) At: https://www.youtube.com/watch?v=1GJRoUJvijw (Accessed  28/03/2025).</li>
 </ul>
 <h2 id="declared-assets">Declared Assets</h2>
 <p><a href="https://www.fab.com/listings/c65a8dd1-ec4c-409c-9919-5eda4f764772">Placeholder assets</a>
@@ -609,11 +620,16 @@ Audio:</p>
 <li><a href="https://pixabay.com/sound-effects/candle-lighting-47691/">Candle Lighting</a></li>
 <li><a href="https://pixabay.com/sound-effects/wooden-chair-slide-scrape-on-wood-floor-75857/">Box Sliding</a></li>
 <li><a href="https://pixabay.com/sound-effects/poltergeist-making-noises-234019/">Boogieman sound 1</a></li>
-<li><a href="https://pixabay.com/sound-effects/scary-foley-86229/">Boogieman Sound 2</a></li>
+<li><a href="https://pixabay.com/sound-effects/scary-foley-86229/">Boogieman Sound 2</a>
+<br>
+<br>
+The following assets were modified using ChatGPT 4o:</li>
 </ol>
+<ul>
+<li>README.md
 <br>
-<br>
-<br>
-<br>
+<br></li>
+</ul>
+
 </body>
 </html>
